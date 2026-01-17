@@ -1,1144 +1,2971 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hemis</title>
-</head>
-<body>
-    <pre>
-        TEST
 
-        ++++  
-        Nutq hamda tovush signallarni segmentlashning turlari qaysi?
-        ====#Ketma-ket, suriluvchi
-        ====Sektorli, segmentli
-        ====Sigmoid
-        ====Kosmoid
-        
-          ++++
-          
-        Nutq hamda tovush signallarni segmentlashning necha xil turi mavjud?
-        ====#2
-        ====4
-        ====5
-        ====7
-        
-          ++++  
-        Elektromiografiya signallari qanday signal?
-        ====#Biosignal
-        ====Nutq signali
-        ====Akustik signal
-        ====Sinusoid signal
-        
-         
-           ++++
-        Elektrokardiografiya signallari qanday signal?
-        ====#Biosignal
-        ====Nutq signali
-        ====Akustik signal
-        ====Sinusoid signal
-        
-         
-           ++++
-        Elektroensofologramma signallari qanday signal?
-        ====#Biosignal
-        ====Nutq signali
-        ====Akustik signal
-        ====inusoid signal
-        
-        ++++  
-        Quyidagi formatlardan qaysi biri audio signallariga mansub?
-        ====#Wav, mp3, ogg
-        ====C3d, txt
-        ====Mp4, max, dll
-        ====To’g’ri javob yo’q
-        
-        ++++  
-        Matlab paketida tasvirlarni qaysi buyruq orqali o’qib olinadi?
-        ====#Imread()
-        ====Imshow()
-        ====Imhist()
-        ====Info()
-        
-        ++++  
-        Raqamli signallar qanday formula asosida  filtrlanadi ?
-        ====#y[n] = b0*x[n] + b1*x[n-1]
-        ====y[n] = (b0*x[n] + a1*x[n-1] )
-        ====y[n] = b2*x[n-2] – a1*y[n-1] – a2*y[n-2])/a0
-        ====To’g’ri javob yo'q
-        
-        ++++  
-        Diskretlash chastotasi 11 kHz signalni vaqt o’qi bo’yicha nechta bo’lakka diskretlanadi
-        ====#11050
-        ====11500
-        ====11000
-        ====11800
-        
-        ++++  
-        Signalni kvatlash qaysi o’q bo’yicha amalga oshiriladi?
-        ====#amplituda
-        ====vaqt
-        ====chastota
-        ====quvvat
-        
-        ++++  
-        Signalni diskretlash qaysi o’q bo’yicha amalga oshiriladi?
-        ====#vaqt
-        ====amplituda
-        ====chastota
-        ====quvvat
-        
-        ++++  
-        Nutq signali sohasidagi boshlang’ich va tugallanish koeffitsiyentlari orasidagi farqni aniqlash nutq signalining qaysi parametrini ifodalaydi?
-        ====#Takrorlanuvchi oraliq qiymatlar soni
-        ====Energiya
-        ====Quvvat
-        ====Tovush spektrogramma qiymati
-        
-        ++++ 
-          
-        Signalda diskret kosinus o’zgartirishi amalga oshirilganda uning natijaviy qiymatlari qaysi sohada ifodalanadi?
-        ====#Amplituda-chastota
-        ====Amplituda-vaqt
-        ====Kuchlanish-tok kuchi
-        ====Kuchlanish-vaqt
-        
-         
-          ++++ 
-        Signalda tezkor Fure o’zgartirishi amalga oshirilganda uning natijaviy qiymatlari qaysi sohada ifodalanadi?
-        ====#Amplituda-chastota
-        ====Amplituda-vaqt
-        ====Kuchlanish-tok kuchi
-        ====Kuchlanish-vaqt
-        
-         
-           ++++
-        Signalda Adamar o’zgartirishi amalga oshirilganda uning natijaviy qiymatlari qaysi sohada ifodalanadi?
-        ====#Amplituda-chastota
-        ====Amplituda-vaqt
-        ====Kuchlanish-tok kuchi
-        ====Kuchlanish-vaqt
-        
-          ++++  
-        Signalda Wevylet o’zgartirishi amalga oshirilganda uning natijaviy qiymatlari qaysi sohada ifodalanadi?
-        ====#Amplituda-chastota
-        ====Amplituda-vaqt
-        ====Kuchlanish-tok kuchi
-        ====Kuchlanish-vaqt
-        
-          ++++
-          
-        Dastlab Analog signallarni qanday filtrlar yordamida filtrlanadi?
-        ====#Analog filtrlar
-        ====Raqamli filtrlar
-        ====Gibrid filtrlar
-        ====filtrlanmaydi
-        
-        ++++  
-        Signallarni qayta ishlash jarayonlarida analog raqamli o’zgartirish jarayoniga  tarkibiga qaysi amallar kiradi?
-         ====#Diskretlash,kvantlash,kodlash
-        ====Diskretlash, segmentlash, filtrlash
-        ====Kvantlash,kodlash, segmentlash
-        ====Kvantlash
-        
-        ++++  
-        Signallarni matritsalarga asoslangan spektral o’zgartirish algoritmini toping.
-        ====#Adamar
-        ====DCT
-        ====Fure
-        ====DFT
-        
-        ++++  
-        Matlab paketida “conv()” buyrug’i qanday vazifani bajaradi?
-        ====#Signallarni svyortka qiladi
-        ====Signallarni korelyatsiya qiladi
-        ====Signallarni filtrlaydi
-        ====To’g’ri javob yo’q
-        
-        ++++  
-        Matlab paketida “close all” buyrug’i qanday vazifani bajaradi?
-        ====#Barcha ochiq figuralarni yopadi
-        ===="Command Window"ni tozalaydi
-        ====Figuralarni ochadi
-        ====O’zgaruvchilarni ifodalaydi
-        
-        ++++  
-        Ochiq figuralarni yopuvchi buyruq Matlab paketida qanday yoziladi?
-        ====#Close all
-        ====Clear all
-        ====Clc
-        ====To’g’ri javob yo’q
-        
-        ++++  
-        Mushaklardan olinadigan biosignallar qanday signallar turiga mansub?
-        ====#Elektromiografiya signali
-        ====Elektrokardiografiya signali
-        ====Ensofologramma signali
-        ====Nutq signali
-        ++++
-        Miyadan olinadigan signallar qanday signallar turiga kiradi?
-        ====#Ensofologramma signali
-        ====Elektromiografiya signali
-        ====Elektrokardiografiya signali
-        ====Nutq signali
-        
-          ++++
-          
-        Yurak mushagidan olinadigan signal qanday signal turiga kiradi?
-        ====#Elektrokardiogramma signali
-        ====Elektromiografiya signali
-        ====Ensofologramma signali
-        ====Nutq signali
-        
-         
-          ++++
-        Tabiatda uchraydigan signallar …. turlarga bo’linadi.
-        ====#Vaqt bo’yicha o’zgaradigan va o’zgarmaydigan
-        ====Diskret va raqamli
-        ====Spektral ishlov berilgan va berilmagan
-        ====Svyortyka qilingan va qilinmagan
-        
-          ++++  
-        Signallar Bul algebrasida qanday ifodalanadi?
-        ====#0 va 1 orqali
-        ====0-7 orqali
-        ====0-10 orqali
-        ====0-15 orqali
-        
-          ++++  
-        Signallarga raqamli ishlov berish amallarining qaysi birini asosida “svyortka algoritmi” yotadi?
-        ====#Filtrlash
-        ====Furye o’zgartirish
-        ====Segmentlash
-        ====Interpolyatsiyalash
-        
-         
-           ++++
-        Matlab paketida tasvirni qaysi buyruq orqali ekranga chiqariladi?
-        ====#Imshow()
-        ====Imread()
-        ====Imhist()
-        ====Info()
-        
-          ++++
-          
-        Matlab paketida  tasvirni qaysi buyruq orqali gistogrammasini chiqarish mumkin?
-        ====#Imhist()
-        ====Imshow()
-        ====Imread()
-        ====Info()
-        
-         
-           ++++
-        Audio signallarining turlari to‘g‘ri keltirilgan javobni aniqlang
-        ====#Mono va stereo
-        ====3d,7d
-        ====Mp3,wav
-        ====Ogg,aac
-        
-          ++++
-          
-        Mono turidagi audio signallar qanday o’lchamda bo’ladi ?
-        ====#1 kanalli
-        ====2 kanalli
-        ====3 kanalli
-        ====4 kanalli
-        
-          ++++
-          
-        Stereo turidagi audio signallar qanday o’lchamda bo’ladi ?
-        ====#2 kanalli
-        ====1 kanalli
-        ====3 kanalli
-        4 kanalli
-        
-         
-           ++++
-        Matlab paketida audio signallarini qaysi buyruq orqali o’qib olinadi?
-        ====#Audioread(), wavread()
-        ====Audiomread(), imshow()
-        ====Imread()
-        ====Imhist()
-        
-          ++++
-          
-        Matlab paketida tasvir signallarini gistogrammasi orqali normallashtirish qaysi buyruq orqali amalga oshiriladi?
-        ====#Histeq()
-        ====Imhist()
-        ====Histogram()
-        ====Pspectrum()
-        
-          ++++
-          
-        Matlab paketida natijani chiqarish ekranini taqsimlash buyrug’i qaysi?
-        ====#Subplot()
-        ====Plot()
-        ====Spectrogram()
-        ====Pspectrum()
-        
-          ++++  
-        Inson qulog‘i eshita oladigan tovush chastotalari oraliqlarini belgilang?
-        ====#20-20000 Hz
-        ====20 kHz-20MHz
-        ====20 Hz dan past
-        ====20 mHz – 20 kHz
-        
-         
-           ++++
-        Analog signallar ....
-        ====#vaqt o'tishi bilan doimiy ravishda o'zgarib turadi
-        ===="0" va "1" nollarning ketma-ketliklaridan iborat
-        ====qadamlar (qadamlar) o'zgarishi
-        ====faqat chastota domenida mavjud
-        
-        ++++ 
-          
-        Raqamli filtr uchun to‘g‘ri javobni aniqlang.
-        ====#Raqamli ishlov berish usuli, ma'lum chegaraga ajratuvchi jarayon ketma-ketlik
-        ====Analog signallarni raqamli qilish uchun ishlatiladigan ketma-ketlik
-        ====To'g'ri javob yo'q
-        ====Turli rejimda ishlovchi, raqamli signallarni demodulyatsiya qilish ketma-ketligi
-        
-         
-           ++++
-        Raqamli filtrning afzalligi nimada?
-        ====#barcha javoblar to'g'ri
-        ====aniqligi
-        ====barqarorligi
-        ====sozlashga egiluvchanligi va kompaktligi
-        
-          ++++
-          
-        Raqamli filtrning kamchiligi nimada?
-        ====#barcha javoblar to'g'ri
-        ====baland chastotali signallar bilan ishlash qiyinligi
-        ====real vaqt davrida ishlash qiyinligi
-        ====signalni qayta ishlashda protsessorning quvvatli bo'lishi
-        
-           ++++
-         
-        Diskret holda svyortkaning ikki turi mavjud ularni nomini aniqlang.
-        ====#Chiziqli va siklik
-        ====Nochiziq va davr
-        ====Siklik va qiymat
-        ====To'gri javob yo'q
-        
-          ++++
-         
-        To‘g‘ri javobni tanlang: Avtokorrelyatsiya bu ?
-        ====#Faqat bitta signalning mavjudligi nazarda tutadi va vaqt o’tishi bilan signalning tuzilishi yoki uning harakati haqida malumot beradi
-        ====Ko’plab signalning mavjudligi nazarda tutadi va vaqt o’tishi bilan signalning tuzilishi yoki uning harakati haqida malumot beradi
-        ====Faqat bitta signalning mavjudligi nazarda tutmaydi va vaqt o’tishi bilan signalning tuzilishi yoki uning harakati haqida malumot beradi
-        ====Faqat bitta signalning mavjudligi nazarda tutadi va vaqt o’tishi bilan signalning tuzilishi yoki uning harakati haqida malumot bermaydi
-        
-          ++++
-          
-        Chekli impuls harakteristikali(KIX ing: FIR) filtr uchun to‘g‘ri ta'rifni belgilang?
-        ====#impuls tavsifnomasini vaqt mobaynida cheklangan xususiyatli bo‘ladi
-        ====impuls tavsifnomasini vaqt mobaynida cheklanmagan xususiyatli bo‘ladi
-        ====barcha javoblar to'g'ri
-        ====bunday filtrlar odatda ishlatilmaydi
-        
-          ++++
-          
-        Chekli impuls harakteristikali(KIX ing: FIR) filtrni afzalligi nimada?
-        ====#barcha javoblar to'g'ri
-        ====chidamli
-        ====qarama-qarshi aloqani talab qilmaydi
-        ====filtrlar fazasi chiziqli qilinishi mumkin
-        ++++
-         
-          
-        Cheksiz impuls harakteristikali(BIX ing: IIR)  filtr uchun to‘g‘ri ta'rifni belgilang?
-        ====#impuls tavsifnomasini vaqt mobaynida cheklanmagan xususiyatli bo‘ladi
-        ====impuls tavsifnomasini vaqt mobaynida cheklangan xususiyati hisoblanadi
-        ====barcha javoblar to'g'ri
-        ====bunday filtrlar odatda ishlatilmaydi
-        
-          ++++
-          
-        Real vaqt tizimlari uchun to‘g‘ri bo‘lgan javobni ko‘rsating.
-        ====#boshqaruv paytida tashqi ta'sirlarga javob berishga ulguradigan tizimlar
-        ====boshqariladigan xar qanday tizimlar
-        ====kompleks tizimlarning barchasi
-        
-          ++++
-          
-        Uchuvchi apparatlar uchun turbalentlik qanday signallarga misol bo`ladi?
-        ====#Tasodifiy
-        ====Determinallashgan
-        ====Raqamli
-        ====To`g`ri javob yo`q
-        
-          ++++
-         
-        Tasodifiy signallarning parametrlarini aniqlang
-        ====#Barchasi to‘g‘ri
-        ====Matematik kutilma
-        ====Dispersiya
-        ====O‘rtacha kvadratik og‘ish
-        
-         
-           ++++
-        Raqamli video sifatini baholovchi eng ishonchli va mukammal tizim?
-        ====#Inson ko`z tizimi
-        ====Telefon kamerasi tizimi
-        ====Kompyuter tizimi
-        ====Ekran tizimlari
-        
-          ++++  
-        Python dasturlash tilida ekranga ma`lumotlarni chiqarish buyrug‘i?
-        ====#Print()
-        ====Show()
-        ====Cout()
-        ====Read()
-        
-         
-           ++++
-        Python dasturlash tilida grafik interfeysni hosil qilib berishga yordam beradigan modul?
-        ====#Tkinter
-        ====Library
-        ====Math
-        ====Grap
-        
-         
-           ++++
-        Python dasturlash tilida matrissalar bilan ishlovchi modullar?
-        ====#Numpy,scipy
-        ====Math
-        ====Filtr
-        ====Array
-        
-          ++++  
-        Filtrlarni loyihalashda signallarni nimalar yordamida filtrlanadi?
-        ====#Filtr koeffisentlari
-        ====Kiruvchi signal
-        ====Chiquvchi signal
-        ====Shovqin signal
-        
-          ++++ 
-        Tibbiyotda ishlatiladigan signal turlarini belgilang.
-        ====#elektromiografiya signali, elektroensefalografiya signali, elektrokardiografiya signal
-        ====davriy signal, statsionar signal, garmonik signal
-        ====tovush signali, garmonik signal, EKG signallari
-        ====barcha javoblar to’g’ri
-         
-          ++++
-        Signallarni korrelyatsiya qilishning nechta shakli mavjud?
-        ====#2
-        ====5
-        ====7
-        ====4
-        
-          ++++ 
-        Signallarni svyortka qilishning necha xil turi bor?
-        ====#2
-        ====4
-        ====5
-        ====8
-        
-         
-          ++++
-        MATLAB tizimining ‘command window’ qismida ma’lumotlarni kiritish … belgisidan boshlanadi.
-        ====#>>
-        ====>
-        ====<<
-        ====<
-        
-         
-          ++++
-        MATLAB tizimida massivlarni kiritish qanday tartibda kiritiladi?
-        ====#[1,2,3,4]
-        ====(1,2,3,4)
-        ====1,2,3,4
-        ====barcha javoblar to’g’ri
-        
-         
-          ++++
-        Signalni vaqt soxasidan chastota sohasiga o’zgartiruvchi algoritmlar berilgan qatorni belgilang.
-        ====#Fourier, DCT, Veyvlet
-        ====KIX, BIX, Fourier
-        ====Low-pass, high-pass
-        ====barcha javoblar to’g’ri
-        
-         
-          ++++
-        Signal protsessorlari ishlab chiqaruvchi mashhur firmalarni ko'rsating.
-        ====#Analog Device, Motorola, Texas Instruments
-        ====Analog Device, Lenovo
-        ====Analog Device, HP, Acer
-        ====barchasi to’g’ri
-        
-          ++++
-         
-        Hisoblash moslamalari necha bitli ma'lumotlarni qayta ishlaydi?
-        ====#16-bitli
-        ====23-bitli
-        ====17-bitli
-        ====15-bitli
-        
-          ++++ 
-        16 kHz chastota necha Hz chastota bo’ladi?
-        ====#16000
-        ====16384
-        ====16100
-        ====16050
-        
-          ++++
-         
-        Raqamli filtrlar nechta katta turga bo’linadi?
-        ====#2
-        ====5
-        ====7
-        ====1
-        
-          ++++
-         
-        Raqamli filtrlarning asosiy afzalligi shundaki, ular:
-        ====#arzonroq
-        ====dizayni osonroq
-        ====dasturlashtiriladigan
-        ====o'tish zonasida keskin pasayishni ta'minlash
-         
-          ++++
-        Qanday turdagi signal tashqi ta’sirlarda kamroq o’zgaradi?
-        ====#Raqamli signal
-        ====Analog signal
-        ====Analog va raqamli signal
-        ====To’g’ri javob A va B javoblar
-        
-          ++++
-         
-        Signalga to’g’ri ta’rif berilgan qatorni belgilang
-        ====#bu fizik jarayon bo’lib, uning parametrlari uzatilayotgan xabarga muvofiq o’zgaradi
-        ====bu fizik jarayon bo’lib, uning parametrlari uzatilayotgan xabarga muvofiq o’zgarmaydi
-        ====bu fizik jarayon bo’lib, uning parametrlari uzatilmayotgan xabarga muvofiq o’zgaradi
-        ====bu fizik jarayon bo’lib, uning parametrlari bo’lmaydi
-         
-        
-          ++++
-         
-        Analog signal bilan raqamli signal o’rtasida qanday farq bor?
-        ====#Analog signal uzluksiz, raqamli signal uzlukli bo’ladi
-        ====Analog signal uzluksiz, raqamli signal uzlukliz bo’ladi
-        ====Analog signal uzlukli, raqamli signal uzlukli bo’ladi
-        ====Analog signal uzlukli, raqamli signal uzlukliz bo’ladi
-        
-          ++++
-         
-        Raqamli signal protsessorlari qanday sinf protsessorlari hisoblanadi?
-        ====#keladigan analogli signallarning raqamli qayta ishlanishiga yo’naltirilgan maxsus mikroprotsessorlar sinfi
-        ====keladigan analogli signallarning raqamli qayta ishlanishiga yo’naltirilgan maxsus tranzistorlar sinfi
-        ====keladigan analogli signallarning raqamli qayta ishlanishiga yo’naltirilgan maxsus triggerlar sinfi
-        ====keladigan analogli signallarning raqamli qayta ishlanishiga yo’naltirilmagan maxsus mikroprotsessorlar sinfi
-        ++++ 
-         
-        Qanday signallar davriy signal hisoblanadi?
-        ====#Ma’lum vaqt o’tishi bilan takrorlanadigan signal
-        ====Ma’lum vaqt o’tishi bilan takrorlanmaydigan signal
-        ====Ma’lum vaqt o’tmasligi bilan takrorlanadigan signal
-        ====Ma’lum vaqt o’tmaslgi bilan takrorlanmaydigan signal
-        
-          ++++
-         
-        Matlabda clc – buyrug’i nima vazifani bajaradi?
-        ====#ishchi oynani tozalash
-        ====buyruq
-        ====o’zgartiruvchi sonni kiritish
-        ====barchasi to’g’ri
-        
-         
-         ++++
-        Tashqi muhit aloqasiga ko‘ra tizimlar qanday bo‘ladi?
-        ====# Ochiq va yopiq
-        ====Yashiringan va asosiy
-        ====Mavhum va absolut
-        ====Agressiv va aktiv
-        
-        ++++
-        Tizimning murakkabligi nimalarga bog‘liq?
-        ====#Ichki va tashqi bog‘liqlik, dinamik o‘zgarishlar
-        ====Tashqi ta’sirlar
-        ====Statik va dinamik kuchlanishlar
-        ====Tizimning integratsiyasi,monitoringi
-        
-        ++++
-        Signal chastotasi 24 kHz  bo'lsa u necha Hz ga teng bo'ladi?
-        ====#24000
-        ====24576
-        ====24050
-        ====24100
-        
-        ++++
-        Signalni segmentlash jarayoni qanday?
-        ====#signalni ma’lum bo’laklarga ajratish
-        ====signalni tanish
-        ====signalni kvantlash
-        ====signalni kodlash
-        
-        ++++
-        Fourier transform (FT) quyidagilar uchun ishlatiladi:
-        ====#vaqt domenidan davriy bo'lmagan signallarni chastota domeniga o'zgartirish
-        ====faqat vaqt domenidan chastota domeniga davriy signallarni va aksincha
-        ====diskret signallarni siqish
-        ====kiruvchi signal chastotalarini filtrlash
-        
-        ++++
-        Signal chastotasi 230 Hz va qurilmaning disktretlash chastotasi 16 kHz bo'lsa, qurilma 1 sekundda nechta qiymat qabul qiladi.
-        ====#16000
-        ====15670
-        ====16230
-        ====8230
-        
-        ++++
-        Video fayllardagi tasvirlarning tebranishiga asosan quyidagilar sabab bo'ladi:
-        ====#kerakli miqdordagi kadrlarni o'z vaqtida uzata olmaslik
-        ====freymlarning yuqori chastotali tarkibiy qismlari bundan mustasno
-        ===="yo'qotish bilan" siqishni usullari
-        ====noo'rin o'tkazish usullari
-        
-        ++++ 
-        JPEG (Joint Photographic Expert Group) siqishni standartining zamonaviy versiyasi:
-        ====#DCT va FFT kombinatsiyasidan foydalanadi va asosan harakatsiz tasvirlar uchun ishlatiladi
-        ====tasvirlarni harakatlantirish uchun ishlatib bo'lmaydi
-        ====DCT va Huffman kodlarining kombinatsiyasidan foydalanadi va asosan harakatsiz tasvirlar uchun ishlatiladi
-        ====siqishni aniqlash uchun kesishni aniqlash smetasidan foydalanadi
-        ++++
-         
-        MATLAB-dagi qaysi funktsiya uzatish funktsiyasi nomeratori va maxrajining polinomlari koeffitsientlari to'plamlarini vektorlar va nollarga o'zgartiradi?
-        ====#cheblfp (x, y)
-        ====demo
-        ====platx
-        ====tf2zp
-        
-        ++++
-         
-        Diskret filtrlar qanday shakllarga ega?
-        ====#Kanonik, ko'chirilgan, ketma-ket, elliptik
-        ====Kanonik, muvozanatli, parallel, elliptik
-        ====Transpozitsiya qilingan, ketma-ket, parallel, kaskadli
-        ====Kanonik, ko'chirilgan, ketma-ket, parallel
-        
-        
-          ++++
-        Signalni kvantlash nima?
-        ====#signalni amplituda o’qi bo’yicha bo’laklash
-        ====signalni amplituda o’qi bo’yicha uzatish
-        ====signalni z o’qi bo’yicha perpendikulyar
-        ====signalni qabul qilish
-        ++++
-        Signallarni adaptiv filtrlashda filtr koeffisentlari qanday hosil qilinadi?
-        ====#Shovqin hamda kiruvchi signallar
-        ====O`zimiz ishlab chiqamiz
-        ====Tasodifiy holatida
-        ====To‘g‘ri javob yo‘q
-        
-        ++++
-         
-        Blokli kodlash nechi turga  bo'linadi?
-        ====#2
-        ====4
-        ====5
-        ====1
-        ++++
-        
-        Ikki o'lchamli signallarda yani tasvirlarda filtrlash amalarini qanday usulda  bajariladi?
-        ====#Matrisa 
-        ====Vektor
-        ====Ketma-ket
-        ====Parallel
-        
-        ++++
-        Kotelnikov teoremasiga ta'rif bering
-        ====#diskretlash chastota asosiy signal  chastotasidan 2 marta  katta bo'lishi kerak 
-        ====diskretlash chastota asosiy signal  chastotasidan 6 marta  katta bo'lishi kerak
-        ====diskretlash chastota asosiy signal  chastotasidan 4 marta  katta bo'lishi kerak
-        ====Javoblar noto'g'ri
-        
-         
-          ++++
-        Signal chastotalarini ifodalash birligini ko'rsating?
-        ====#Hz
-        ====kg
-        ====ms
-        ====F
-        
-         
-          ++++
-        Lokal bazis o'zgartirish algoritmini ko'rsating?
-        ====#Haara
-        ====Furye
-        ====Adamar
-        ====Tezkor-Furye
-        
-         
-          ++++
-        Integral bazis o'zgartirish algoritmini ko'rsating?
-        ====#Furye
-        ====Haara
-        ====Adamar
-        ====Veyvlet
-        
-         
-          ++++
-        Bazis funksiyasi tashkil etuvchilari 1 va -1 ga ega spektral o'zgartirish turini aniqlang?
-        ====#Adamar
-        ====DCT
-        ====Furye
-        ====Veyvlet
-        
-         
-          ++++
-        Bazis funksiyasi tashkil etuvchilari sinus va kosinusga ega spektral o'zgartirish turini aniqlang?
-        ====#Furye
-        ====Haara
-        ====Adamar
-        ====Veyvlet
-        
-        ++++
-         
-        Diskretlash natijasida qanday signal paydo bo’ladi?
-        ====#Diskret
-        ====Filtr
-        ====Analog
-        ====Hech qanaqa signal paydo bo’lmaydi
-        
-        ++++
-        
-        Tasvir signalining piksellari qanday ranglardan tashkil topgan?
-        ====#qizil ko’k yashil
-        ====qora oq qizil
-        ====sariq qora oq
-        ====ko’k qora qizil
-        
-        ++++
-        Ma’lumotlarning siqish algoritmlari necha guruhga bo’linadi?
-        ====#2
-        ====8
-        ====6
-        ====7
-        
-           ++++
-        Quyidagi keltirilgan filtrlash jarayoning ifodasida y[n] qanday signal?
-        y[n] = (b0*x[n] + b1*x[n-1] + b2*x[n-2] – a1*y[n-1] – a2*y[n-2])/a0
-        ====#Filtrlangan signal
-        ====Filtrlanganmagan signal
-        ====Shovqin signali
-        ====to’g’ri javob yo'q
-        
-           ++++
-        Raqamli filtrlar nima uchun analog filtrlardan afzalroq ( eng asosiy sabablardan birini keltiring)
-        ====#ularni oson dasturlashtirilishi mumkin
-        ====ishlab chiqaruvchilar ko'pincha yangi protsessorlarni ishlab chiqaradilar
-        ====ular barqaror
-        ====to'g'ri javob yo'q
-        
-          ++++
-          
-        Oddiy raqamli signal protsessorlari tizimi quyidagilardan iborat.
-        ====#DSP, xotira, ADC, DAC va aloqa portlari
-        ====mikroprotsessor va xotira
-        ====mikroprotsessor, ADC va DAC
-        ====mikroprotsessor va yordamchi ombor
-        
-          ++++  
-        Ko'p protsessorli tizimlarda hisoblash jarayonini tashkil qilish usuli:
-        ====#Ko'p protsessorli ishlov berish
-        ====Ko'p vazifali ishlov berish
-        ====Geterogen
-        ====Ko'p yadroli ishlov berish
-        
-         
-           ++++
-        Nutq signallari qanday signal?
-        ====#Biosignal
-        ====O'zgarmas signal
-        ====tangensial signal
-        ====Sinusoid signal
-        
-         
-           ++++
-        Vaqtga nisbatan fizik signallarni tahlil qilish nima deb ataladi
-        ====#Vaqt sohasida signallarini qayta ishlash
-        ====Faza sohasida signallarini qayta ishlash
-        ====Chastota sohasida signallarini qayta ishlash
-        ====Amplituda sohasida signallarini qayta ishlash
-        
-          ++++
-          
-        Signallarga ishlov berishda qaysi sohalarda jarayonlarni amalga oshirish mumkin?
-        ====#Vaqt va chastota sohasida
-        ====Faza va chastota sohasida
-        ====Vaqt va faza sohasida
-        ====Faza va amplituda sohasida
-        
-          ++++
-          
-        Deterministik signallar qanday ko’rinishlarda bo’ladi?
-        ====#Davriy va davriy bo’lmagan
-        ====Aniq va noaniq
-        ====Chekli va cheksiz
-        ====Tog’ri javob keltirilmagan
-        
-           ++++
-        QNX operatsion tizimi qaysi arxitektura asosida qurilgan?
-        ====#Mikroyadroli
-        ====SIMD
-        ====MIMD
-        ====MISD
-        
-           ++++
-          
-        Signallarni qayta ishlashda eng ko`p ishlatiladigan amal?
-        ====#Svyortka
-        ====Korrelyatsiya
-        ====Tanib olish masalalari
-        ====Identifikatsiya
-        
-           ++++
-        Nutq signallarini tanib olishda qaysi modeldan foydalangan maqsadga muvofiq?
-        ====#Markov modellari
-        ====So`zlarning turli 3d modellari
-        ====Gap tuzilishi modellari
-        ====To`g`ri javob yo`q
-        
-           ++++
-        Signal protsessori ishlab chiqaradigan dunyoda yetakchi kompaniya?
-        ====#Analog Devices
-        ====Microsoft
-        ====IBM
-        ====Microsystem Sun
-        
-        ++++
-        AVR mikrokontrollerlari qaysi firmaga tegishli?
-        ====#Atmel
-        ====MicroSystem Sun
-        ====Anolog Dvices
-        ====AVR Company
-        ++++
-          
-        QNX operatsion tizimi operatsion tizimi qachon ishlab chiqilgan?
-        ====#1982
-        ====1984
-        ====1986
-        ====1970
-        ++++
-         
-        ++++  
-        QNX operatsion tizimiga to'g'ri ta'rif berilgan qatorni toping?
-        ====#real vaqt tizimida ishlovchi mikroyadroli operatsion tizim
-        ====Operatsion tizim yopiq kodli
-        ====Faqat bir foydalanuvchi uchun ishlab chiqilgan
-        ====barcha javoblar to'g'ri
-        ++++ 
-          
-        Korrelyatsiya ikki shakli mavjud ularni nomini aniqlang.
-        ====#Avtokorrelyasiya va o'zaro korrelyasiya
-        ====O'zaro korrelyasiya va siklik
-        ====Radar signalar va chastotalar
-        ====To'gri javob yo'q
-        ++++
-         
-          
-        Raqamli signal prosessorlari ishlab chiqaradigan firmalar qatorini ko'rsating.
-        ====#Analog Device,Motorola,Texas Insruments
-        ====Motorola, Nokia, Samsung
-        ====LG,Samsung
-        ====To'gri javob yo'q
-        
-         
-        ++++
-        Qanday filtrlarni ishlatish yordamida Raqamli signallarni filtrlash mumkin?
-        ====#Raqamli filtrlar
-        ====Analog filtrlar
-        ====Raqamli signal filtrlanmaydi
-        ====To’g’ri javob yo’q
-        
-         
-        ++++
-         Signalni bo’laklarga taqsimlash(bo’lish) qanday jarayon?
-        ====#Segmentlash
-        ====Svyortkalash
-        ====Korelyatsiyalash
-        ====Filtrlash
-        ++++ 
-          
-        Turli turdagi signallarni turli shovqinlardan, halaqitlardan tozalash qanday jarayon?
-        ====#Filtrlash
-        ====Segmentlash
-        ====Korelyatsiyalash
-        ====Aproksimatsiyalash
-        
-         
-           ++++
-        Signallarni bir biriga mosligini tekshirish qanday jarayon?
-        ====#Korrelyatsiyalash
-        ====Segmentlash
-        ====Filtrlash
-        ====Interpolyatsiyalash
-        
-          ++++
-          
-        Matlab paketida ma’lumotlar qanday shaklda ifodalanadi?
-        ====#matritsa
-        ====text
-        ====excel
-        ====file
-        ++++
-          
-        Matlab paketida “Workspace” qismda nimalar joylashgan?
-        ====#Natijalar, o’zgaruvchi qiymatlari
-        ====Buyruqlar
-        ====Fayllar
-        ====To’gri javob yo’q
-        
-           ++++
-        Matlab paketida “Command History” qismida nimalar joylashgan?
-        ====#Buyruqlar tarixi
-        ====Natijalar, o’zgaruvchi qiymatlari
-        ====Fayllar
-        ====To’gri javob yo’q
-        
-        ++++
-        1KHz chastota necha Hz chastota bo’ladi?
-        ====#1000
-        ====1024
-        ====1050
-        ====1100
-          
-        Matlab paketida Adamard matritsasini hosil qilish buyrug’i qanday?
-        ====#Hadamard()
-        ====Matrix()
-        ====Adamard()
-        ====Adamard_matrix()
-        ++++  
-        Matlab paketida signallarni svyortka qilish buyrug’i qanday?
-        ====#Conv()
-        ====Convolution_s()
-        ====Coor()
-        ====To’g’ri javob yo’q
-        ++++  
-        Matlab paketida “conv()” buyrug’i qanday vazifani bajaradi?
-        ====#Signallarni svyortka qiladi
-        ====Signallarni korelyatsiya qiladi
-        ====Signallarni filtrlaydi
-        ++++
-        Matematik nuqtai nazardan, uzluksiz signal doimiy....... ifodalanadi.
-        ====#funktsiyani
-        ====grafikni
-        ====matematikani
-        ====fizikani
-        
-          ++++
-          
-        Aloqa tizimi deb…………… aytiladi.
-        ====#xabar manbasi va iste'molchi o‘rtasidagi xohlagan ikkita nuqta orasidagi texnik qurilmalar to‘plamiga
-        ====xabarni fazoniy bir nuqtasidan ikkinchi nuqtasiga uzatish uchun xabarni biror bir fizik jarayonga yuklashimiz ya'ni uni signalga aylantirishimiz
-        ====bu xar xil fizik jarayonlar, jismlar, tarixiy va kundalik xodisalar to‘g‘risidagi ma'lumotga
-        ====uzatish uchun uni ma'lum bir shaklga keltirish lozim tekst, jadval, grafik, rasm, xarakatdagi tasvir, va boshqalar
-        ++++ 
-          
-        Telefon signali (ovoz) spektr kengligi qancha ?
-        ====#300 Hz ÷ 3400 Hz
-        ====300 Hz ÷ 3000 Hz
-        ====300 Hz ÷ 3800 Hz
-        ====300 Hz ÷ 400 Hz
-        
-         
-        ++++
-        Radioeshittirish signali spektr kengligi qancha?
-        ====#20  Hz   ÷  20000 Hz
-        ====20  Hz   ÷  200 Hz
-        ====20  Hz  ÷  2400 Hz
-        ====20  Hz   ÷  26000 Hz
-        
-          ++++
-          
-        Telegraf signali spektr kengligi qancha?
-        ====#0  Hz ÷ 100 Hz
-        ====0  Hz ÷ 1000 Hz
-        ====0  Hz ÷ 10000 Hz
-        ====0  Hz  ÷ 10 Hz
-        
-        ++++
-        Televizion signali (video ) spektr kengligi qancha?
-        ====#50 Hz ÷6.5 MHz
-        ====0  Hz ÷ 1000Hz
-        ====20  Hz  ÷  2400Hz
-        ====300 Hz ÷ 3500 Hz
-         
-           ++++
-        Matlab paketida signalni ekranda tasvirlash uchun qaysi buyruqdan foydalaniladi?
-        ====#Plot()
-        ====Wavread()
-        ====Clc
-        ====Pwelch()
-        ++++
-        Python dasturlash tilida matritsalar bilan ishlash kutubxonasi qaysi?
-        ====#Numpy
-        ====Liblary
-        ====Wav_file
-        ====Audioread
-        ++++  
-        AVR mikrokontrollerlari qanday arxitekturada tuzilgan?
-        ====#RISC-arxitektura asosidagi
-        ====CISC arxitektura asosida
-        ====CISC VA RISC
-        ====To'g'ri javob yo'q
-        ++++  
-        'fft(x)' - buyrug'i Matlab paketida qanday vazifani bajaradi?
-        ====#X-signalni tezkor Furye o'zgartirishi yordamida chastota sohasiga olib o'tadi
-        ====X-signalni diskret kosinus o'zgartirishi yordamida chastota sohasiga olib o'tadi
-        ====X-signalni diskret sinus o'zgartirishi yordamida chastota sohasiga olib o'tadi
-        ====X-signalni diskret tangens o'zgartirishi yordamida chastota sohasiga olib o'tadi
-        
-        ++++
-        Korrelyatsiya jarayoni nechta shakli mavjud?
-        ====#2
-        ====5
-        ====7
-        ====4
-        
-        ++++  
-        “pwelch” buyrug‘i Matlab muhitida nima vazifani bajaradi
-        ====#Signalning spektral quvvat zichligini ifodalaydi
-        ====Signalni svyortka qiladi
-        ====Signalni korrelyatsiya qiladi
-        ====Bunday buyruq mavjud emas
-        
-        ++++
-        Spektral o’zgartirish algoritmlari mavjud qatorni aniqlang:
-        ====#DCT,FFT,Haar,Adamar
-        ====Hamming
-        ====anning
-        ====To’g’ri javob yo’q
-        
-        ++++
-        Signallarni qayta ishlashda analog signallarni raqamli signalga aylantirishning asosiy amallari qaysilar?
-        ====#Diskretlash,  kvantlash va Kodlash
-        ====Diskretlash
-        ====Kvantlash va Kodlash
-        ====Kodlash
-        
-        ++++
-        Signallarni qayta ishlashda signal o‘lchamining sekundiga qilingan o‘lchashlar soni nima deb aytiladi?
-        ====#Diskretlash
-        ====kvantlash chastotasi
-        ====freymlash chastotasi
-        ====to’g’ri javob keltirilmagan
-        
-         
-        ++++  
-        Signallarni uzluksiz yoki diskret miqdor qiymatlarining qatorini chekli oraliqlarga bo‘lish jarayoni qanday nomladi?
-        ====#Kvantlash
-        ====Freymlash
-        ====Diskretlash
-        ====Taqsimlash
-         
-           ++++
-        Nutqiy signal tarkibidagi so'zlashuv, bo'g'in yoki fonemalar orasidagi chegaralarni aniqlash jarayoni nima deb ataladi?
-        ====#Nutq signalini segmentlash
-        ====Nutq signalini kvantlash
-        ====Nutq signalini diskretlash
-        ====Nutq signalini yaxlitlash
-        
-          ++++
-          
-        Signallar Analog filtr bilan filtrlanganda qanday signal hosil bo’ladi?
-        ====#Analog signal
-        ====Raqamli signal
-        ====skret signal
-        ====kvant signal
-        
-          ++++ 
-        Raqamli filtrlar impuls javob reaksiyalariga ko‘ra 2ta katta turga bo'linadi ularni nomi keltirilgan qatorni ko'rsating.
-        ====#Cheksiz va chekli
-        ====Chekli va uzluksiz
-        ====Davriy va chekli
-        ====To'gri javob yo'q
-        
-          ++++
-          
-        Diskretlash chastotasi aniqlash qaysi teorema asosida olingan.
-        ====#Kotelnikov
-        ====Nuyton
-        ====Filips
-        ====Nobel
-        
-        
-           ++++
-        Raqamli sxemalar bilan taqqoslaganda analog sxemalar quyidagilarga nisbatan sezgirroqdir.
-        ====#haroratning o'zgarishi, qarish va elementlarning bardoshlik darajasi
-        ====dasturiy ta'minotdagi xatolar
-        ====dizayndagi kamchiliklar
-        ====chiqish signalidagi o'zgarishlar
-        
-          ++++
-          
-        Furye tahlili ……
-        ====#Signalni asl domenidan chastota domeniga o‘zgartiradi
-        ====Signalni ma’lum darajada pasaytirish uchun ishlatiladi
-        ====Kiruvchi signal fragmentlarga ajratadi
-        ====Qisqa vaqtli energiya qiymati hisoblanadi
-        
-        ++++  
-        Signal deb ………………………………… aytiladi?
-        ====#biror bir fizik jarayonning bir yoki nechta parametlarini xabarga mos ravishda o‘zgarishiga
-        ====inson haqida ma’lumot beruvchi kundalik
-        ====bu xar xil fizik jarayonlar, jismlar, tarixiy va kundalik xodisalar to‘g‘risidagi ma'lumotnomaga
-        ====uzatish uchun uni ma'lum bir shaklga keltirish lozim tekst, jadval, grafik, rasm, xarakatdagi tasvir, va boshqalarga.
-        
-         
-        ++++
-        Tabiatda signallar asosan qanday holatda bo‘ladi ?
-        ====#analog
-        ====raqamli
-        ====kvantlashgan
-        ====to‘g‘ri javob yo‘q
-        
-        ++++  
-        DFT(Discrete Fourier Transform) qiymatlarini qanday olinadi?
-        ====#Qiymatlarni ketma-ketlikni turli chastotalarning tarkibiy qismlariga ajratish orqali
-        ====Qiymatlarni birma-bir murojaatlar asosida
-        ====Qiymatlarni turli yo‘nalishlarda berilgan so‘rovlar orqali
-        ====To‘g‘ri javob yo‘q
-        ++++
-        Elektr signal deb –
-        ====#elektr jarayonining bir yoki bir nechta parametrlarini xabarga mos ravishda o’zgarishiga aytiladi
-        ====xabarni fazoniy bir nuqtasidan ikkinchi nuqtasiga uzatish uchun xabarni biror bir fizik jarayonga yuklashimiz ya'ni uni signalga aylantirishimiz
-        ====bu xar xil fizik jarayonlar, jismlar, tarixiy va kundalik xodisalar to‘g‘risidagi ma'lumotga
-        ====uzatish uchun uni ma'lum bir shaklga keltirish lozim tekst, jadval, grafik, rasm, xarakatdagi tasvir, va boshqalar
-        ++++  
-        Kvantlash jarayonida . . . .
-        ====#signallarning butun diapazoni darajalarga bo'linadi, ularning soni berilgan bit kengligi sonlari bilan ifodalanishi kerak.
-        ====raqamli signallar o‘zaro bir-biri bilan qo‘shiladi
-        ====diskretlanmagan signallarni jamlash amalga oshiradi
-        ====to‘g‘ri javob yo‘q
-        
-        ++++
-        Xabar manbadan xabar iste’molchiga yetkazib berish uchun foydalaniladigan texnik qurilmalar to’plamiga …………………  deb ataladi.
-        ====#Aloqa tizimi
-        ====Aloqa liniyasi
-        ====Aloqa qurilmasi
-        ==== Aloqa tuguni
-        
-        ++++  
-        Signallarni sinus va kosinusga asoslangan spektral o’zgartirish algoritmi qaysi?
-        ====#Fure
-        ====Adamar
-        ====DCT
-        ====Haara
-        
-        
-         
-        
-        
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      input {
+        padding: 6px;
+        width: 300px;
+      }
+      button {
+        padding: 6px 12px;
+        cursor: pointer;
+      }
+      pre {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        white-space: pre-wrap;
+      }
+      mark {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Qidiruv (Search)</h2>
+
+    <input type="text" id="searchInput" placeholder="Matn kiriting..." />
+    <button onclick="searchText()">Search</button>
+    <button onclick="resetText()">Reset</button>
+
+    <pre id="content">
 
 
 
- 
 
+      Sozlamalar bu – …
+      ====
+      #qurilma ma'lumotlarini sozlamalar va parametrlarda saqlash
+      ====
+      media fayllarini audio, video va rasm sifatida saqlash
+      ====
+      aloqa ma'lumotlarini saqlash
+      ====
+      ma'lumotlar "o‘tkazib yuborilgan qo‘ng‘iroqlar", "qo‘ng‘iroq tafsilotlari" va boshqalar
+      
+      
+      
+      
+      +++++
+      
+      
+      Funksiya o‘zi chaqirilgan moduldan qabul qilib oladigan qiymatlar nima deb ataladi?
+      ====
+      #argument
+      ====
+      class
+      ====
+      protocol
+      ====
+      method
+      
+      
+      +++++
+      
+      
+      "Mobil ilova" atamasi qanday ilovalarga nisbatan ishlatiladi?
+      ====
+      #Mobil platformalarda ishlovchi ilovalar
+      ====
+      Desktop interfeysda ishlovchi ilovalar
+      ====
+      Linux OT da ishlovchi ilovalar
+      ====
+      Web interfeysda ishlovchi ilovalar
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Emulyator qanday dastur?
+      ====
+      #Bir OT uchun yozilgan dasturni boshqa OT da ishlashini ta'minlovchi dastur
+      ====
+      Yozilgan kodni interpretatsiya qilib beruvchi dastur
+      ====
+      Bir dasturlash tilida yozilgan kodni boshqa tilga konvertatsiya qiluvchi dastur
+      ====
+      Yozilgan kodni kompilyatsiya qilib beruvchi dastur
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Play Store nima?	
+      ====
+      #Android telefonlari uchun mo‘ljallangan mobil ilovalar do‘koni
+      ====
+      Foydalanuvchilarga iTunes do‘konidan turli xil mobil ilovalarni ko‘rib chiqish va yuklab olish imkoniyatini beruvchi xizmat
+      ====
+      App Store-dan bepul yoki pullik dasturlarni yuklash servisi
+      ====
+      Mobil ilovalar ishlab chiqish uchun onlayn platforma
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      App Store haqida to‘g‘ri ta’rifni belgilang?
+      ====
+      #iOS foydalanuvchilari uchun mobil ilovalar do‘koni
+      ====
+      Android telefonlari uchun mo‘ljallangan platforma
+      ====
+      Onlayn kodlar generatori
+      ====
+      iOS uchun havfsizlikka javobgar tizim
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Androidga to‘g‘ri ta’rif berilgan qatorni belgilan
+      ====
+      #Linux yadrosida ko‘tarilgan mobil OT //Kernell
+      ====
+      Apple qurilmalari uchun yaratilgan mobil OT
+      ====
+      Windows OT negizida yaratilgan mobil OT
+      ====
+      Java Development Kit dasturiy vositalari to‘plami komponentasi
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Quyidagilardan mobil dasturlash til va freymvorklarini belgilang
+      ====
+      #Kivy, Flutter, React Native
+      ====
+      Java, PHP, SQL
+      ====
+      Flask, Spring, Kivy
+      ====
+      React JS, Node JS, C#
+      
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      
+      Flutter freymvorki qaysi dasturlash tiliga tegishli
+      ====
+      #Dart
+      ====
+      Python
+      ====
+      Java
+      ====
+      C#
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Table (yoki DataTable) komponentasi nima uchun ishlatiladi?
+      ====
+      #Ma’lumotlarni jadval ko‘rinishida ekranga chiqarish uchun
+      ====
+      Rasmlarni joylashtirish uchun
+      ====
+      Material dizayn kutubxonasini chaqirish uchun
+      ====
+      Audio ma’lumotlarni joylashtirish uchun
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Quyidagilardan faqat mobil OT lar ko‘rsatilgan qatorni belgilang
+      ====
+      #Android, iOS, Symbian, Windows mobile
+      ====
+      Django, Kivy, Windows, Debian
+      ====
+      MacOS, Windows, Symbian, Linux
+      ====
+      Flutter, Windows, Android, iOS
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda quyidagi qaysi platformalar uchun dasturlar yozish mumkin?
+      ====
+      #Android va iOS, iOS uchun Flutter plaginini o‘rnatib yozish mumkin
+      ====
+      Faqat Android
+      ====
+      Faqat iOS
+      ====
+      Symbian
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda iOS uchun ham dastur yozishga qanday talablar mavjud?
+      ====
+      #Flutter plaginini o‘rnatish kerak
+      ====
+      Maxsus emulyator kerak bo‘ladi
+      ====
+      Web interpretator o‘rnatish kerak
+      ====
+      React JS generatorini ulash kerak
+      
+      
+      
+      +++++
+      
+      
+      
+      Image (Imageview) komponentasi qay maqsadda ishlatiladi?
+      ====
+      #Rasmlarni joylashtirish uchun
+      ====
+      Ma’lumotlarni jadval ko‘rinishida chop etish uchun
+      ====
+      Audioma’lumotlarni joylashtirish uchun
+      ====
+      Matnli ma’lumotlarni joylashtirish uchun
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Mobil ilovadagi element ustiga sichqoncha chap tugmasi bilan bosilganda qaysi metod ishga tushadi?
+      ====
+      #OnPressed()
+      ====
+      OnChanged()
+      ====
+      OnFocused()
+      ====
+      OnResume()
+      
+      
+      
+      +++++
+      
+      
+      
+      Android dasturlari qaysi kengaytma bilan saqlanadi?
+      ====
+      #.apk
+      ====
+      .cpp
+      ====
+      .txt
+      ====
+      .exe
+      
+      
+      
+      +++++
+      
+      
+      
+      Sana bilan ishlovchi komponenta (Android Studio, Flutter) qanday nomlanadi?
+      ====
+      #DatePicker
+      ====
+      Button
+      ====
+      Checkbox
+      ====
+      Radio
+      
+      
+      
+      +++++
+      
+      
+      
+      Flutter freymvorki qaysi kompaniya tomonidan qo‘llab quvvatlanadi?
+      ====
+      #Google
+      ====
+      Facebook
+      ====
+      Apple
+      ====
+      Yandex
+      
+      
+      
+      +++++
+      
+      
+      
+      Label vazifasini bajaruvchi komponentalar nomlari berilgan qatorni ko‘rsating?
+      ====
+      #Text, TextView
+      ====
+      Button, Checkbox
+      ====
+      Radio, Grid
+      ====
+      Table, DataTable
+      
+      
+      
+      +++++
+      
+      
+      
+      Mobil ilova (masalan, birorta .apk kengaytmali fayl) ni kompyuterda ishlatish imkonini beruvchi dasturlar qanday nomlanadi?
+      ====
+      #Emulyator
+      ====
+      Kompilyator
+      ====
+      Translator
+      ====
+      Editor
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda mavjud faylni ochish uchun qaysi buyruqdan foydalaniladi?
+      ====
+      #Open (Ctrl + O)
+      ====
+      Run (Shift + F10)
+      ====
+      Debug (Shift + F9)
+      ====
+      Save (Ctrl + S)
+      
+      
+      
+      +++++
+      
+      
+      
+      Dart tilining mobil dasturlash uchun mo‘ljallangan freymvorkini belgilang?
+      ====
+      #Flutter
+      ====
+      Spring
+      ====
+      Django
+      ====
+      Symphony
+      
+      
+      
+      +++++
+      
+      
+      
+      Quyidagilardan qaysi biri mobil dasturlash freymvorki hisoblanadi?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      Python Kivy
+      ====
+      React Native
+      ====
+      Dart Flutter
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda qilinayotgan mobil ilova loyihasida .gitignore faylida qanday ma’lumotlar saqlanadi?
+      ====
+      #Git bilan ishlash sozlamalari
+      ====
+      iOS ga oid kodlar
+      ====
+      Flutter yangilanishiga oid metama’lumotlar
+      ====
+      Android maxsus (native) kodlari
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda qilinayotgan mobil ilova loyihasida kerakli paketlar haqidagi ma’lumotlar qaysi faylda saqlanadi?
+      ====
+      #packages 
+      ====
+      metadata
+      ====
+      gitignore
+      ====
+      android
+      
+      
+      +++++
+      
+      
+      Android qaysi sabablarga ko‘ra Linuxga asoslanib yaratilgan?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      Xavfsizlik
+      ====
+      Portativlik
+      ====
+      Tarmoqlilik
+      
+      
+      +++++
+      
+      
+      Android Studioda qilinayotgan mobil ilova loyihasida iOS katalogida qanday ma’lumotlar saqlanadi?
+      ====
+      #iOS ga oid kodlar
+      ====
+      Flutter yangilanishiga oid metama’lumotlar
+      ====
+      Android maxsus (native) kodlari
+      ====
+      Kutubxona sozlamalari
+      
+      
+      +++++
+      
+      
+      Android Studioda qilinayotgan mobil ilova loyihasida .packages faylida qanday ma’lumotlar saqlanadi?
+      ====
+      #Paketlar haqida qo‘shimcha ma’lumotlar
+      ====
+      iOS ga oid kodlar
+      ====
+      Flutter yangilanishiga oid metama’lumotlar
+      ====
+      Kutubxona sozlamalari
+      
+      
+      +++++
+      
+      
+      Android Studioda iOS spetsifikatsiyasiga doir maxsus sozlamalar qaysi katalogda saqlanadi?
+      ====
+      #Ios 
+      ====
+      Android 
+      ====
+      Lib
+      ====
+      Test
+      
+      
+      +++++
+      
+      
+      Samarali mobil ilova ishlab chiqish uchun qaysi savollarga to‘g‘ri javob berish kerak?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      Bu ilovadan kimlar foydalanadi
+      ====
+      Ilovaning o‘ziga hosligi nimada
+      ====
+      Ilovadan foydalanuvchiga nima foyda
+      
+      
+      +++++
+      
+      
+      Android Studioda qilinayotgan mobil ilova loyihasida android katalogida qanday ma’lumotlar saqlanadi?
+      ====
+      #Android maxsus (native) kodlari
+      ====
+      iOS ga oid kodlar
+      ====
+      Flutter yangilanishiga oid metama’lumotlar
+      ====
+      Kutubxona sozlamalari
+      
+      
+      +++++
+      
+      
+      Android Studioda Flutterda dasturlash uchun qanday talablar mavjud?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      Flutter freymvorkining plaginini o‘rnatish
+      ====
+      Dart dasturlash tilining plaginini o‘rnatish
+      ====
+      Flutter SDK ni o‘rnatish va Pathni sozlash
+      
+      
+      +++++
+      
+      
+      Android OT qaysi kompaniya tomonidan yaratilgan?
+      ====
+      #Android Ins
+      ====
+      Samsung
+      ====
+      Apple
+      ====
+      Microsoft
+      
+      
+      +++++
+      
+      
+      Mobil ilovalar dizaynini ishlab chiqishda UI tushunchasi nimani ifodalaydi?
+      ====
+      #Foydalanuvchi interfeysi
+      ====
+      Foydalanuvchi tajribasi
+      ====
+      Mijoz talablari
+      ====
+      Texnik topshiriq
+      
+      
+      +++++
+      
+      
+      Ma’lumotlarni jadval ko‘rinishida aks ettirish uchun qaysi komponenta ishlatiladi?
+      ====
+      #Table, DataTable
+      ====
+      Text, TextView
+      ====
+      Radio, RadioButton
+      ====
+      ListView
+      
+      
+      +++++
+      
+      
+      Sinf yaratish qaysi kalit so‘z yordamida amalga oshiriladi?
+      ====
+      #class
+      ====
+      function
+      ====
+      extend
+      ====
+      Debug
+      
+      
+      +++++
+      
+      
+      Button ustiga sichqoncha bilan bosilganda qaysi metod ishga tushadi?
+      ====
+      #onPress (Pressed)
+      ====
+      onCheck (Checked)
+      ====
+      onChange(Changed)
+      ====
+      Bunday metod mavjud emas
+      
+      
+      +++++
+      
+      
+      CheckBox belgilanganda qaysi atribut True qiymatga ega bo‘ladi?
+      ====
+      #Checked
+      ====
+      onpress
+      ====
+      clicked
+      ====
+      style
+      
+      
+      +++++
+      
+      
+      Ob'ektning qiymati qaysi atribut orqali o‘rnatiladi?
+      ====
+      #Value
+      ====
+      Key
+      ====
+      Caption
+      ====
+      Id
+      
+      
+      +++++
+      
+      
+      Mavjud variantlardan faqat bittasini belgilash uchun ishlatiladigan komponenta qaysi?
+      ====
+      #Radio/RadioButton
+      ====
+      Text/TextView
+      ====
+      Grid/GridView
+      ====
+      Table/DataTable
+      
+      
+      +++++
+      
+      
+      Android Studioda tayyor bo‘lgan faylni saqlash uchun qaysi buyruq bosiladi?
+      ====
+      #Save (Ctrl + S)
+      ====
+      Open (Ctrl + O)
+      ====
+      Debug (Shift + F9)
+      ====
+      Run (Shift + F10)
+      
+      
+      +++++
+      
+      
+      Android Studioda qilinayotgan mobil ilova loyihasida test katalogida qanday ma’lumotlar saqlanadi?
+      ====
+      #dasturni testlashga doir kodlar
+      ====
+      iOS ga oid kodlar
+      ====
+      Flutter yangilanishiga oid metama’lumotlar
+      ====
+      Kutubxona sozlamalari
+      
+      
+      +++++
+      
+      
+      Android Studiodagi Android Virtual Device qanday vazifani bajaradi?
+      ====
+      #Emulyator yoki telefonsiz dasturni ishlatib ko‘rish imkoniyatini beradi
+      ====
+      Yozilgan dasturni sintaktik tahlil qiladi
+      ====
+      Github bilan sinxronizatsiyani ta’minlaydi
+      ====
+      To‘g‘ri javob yo‘q
+      
+      
+      +++++
+      
+      
+      Android Studioda sozlamalarga tezkor kirish uchun qaysi klavishlar birgalikda bosiladi?
+      ====
+      #Ctrl + Alt + S
+      ====
+      Ctrl + Shift + O
+      ====
+      Ctrl + Alt + N
+      ====
+      Ctrl + Shift + N
+      
+      
+      +++++
+      
+      
+      Android Studioda android spetsifikatsiyasiga doir maxsus sozlamalar qaysi katalogda saqlanadi?
+      ====
+      #Android
+      ====
+      Ios
+      ====
+      Lib
+      ====
+      Test
+      
+      
+      +++++
+      
+      
+      Android Studioda qilinayotgan mobil ilova loyihasida Flutterni yangilashga doir metama’lumotlar qaysi faylda saqlanadi?
+      ====
+      #. metadata 
+      ====
+      .packages
+      ====
+      . gitignore
+      ====
+      android
+      
+      
+      +++++
+      
+      
+      Ilk telefon qurilmasiga kim patent olgan?
+      ====
+      #Aleksandr Bell
+      ====
+      Tomas Edison
+      ====
+      Nikola Tesla
+      ====
+      Fon Neyman
+      
+      
+      +++++
+      
+      
+      Android dasturni WINDOWS OT da ishlatish mumkinmi?
+      ====
+      #Mumkin, emulyatorlar kerak bo‘ladi
+      ====
+      Buning iloji yo‘q
+      ====
+      Mumkin, brauzer yordamida
+      ====
+      Mumkin, videokodeklar kerak bo‘ladi
+      
+      
+      +++++
+      
+      
+      iOS OT haqida to‘g‘ri ta’rif berilgan javobni belgilang?
+      ====
+      #Barcha javoblar to‘g‘ri 
+      ====
+      Xavfsizlikning yuqori darajasi
+      ====
+      Betakror dizayn, qulay interfeys
+      ====
+      Sifat va barqarorlik
+      
+      
+      +++++
+      
+      
+      Android OT quyidagi imkoniyatlarning qaysi birini qo‘llab-quvvatlaydi?
+      ====
+      #Ko‘p vazifalilik
+      ====
+      Bluetooth
+      ====
+      Video qo‘ng‘iroq
+      ====
+      Barcha javoblar to‘g‘ri
+      
+      
+      +++++
+      
+      
+      WINDOWS OT asosida yaratilgan mobil OT ni belgilang?
+      ====
+      #Windows Phone 
+      ====
+      Windows 11
+      ====
+      Windows Vista
+      ====
+      Windows XP
+      
+      
+      +++++
+      
+      
+      Apple mobil qurilmalari uchun ilovalar do‘koni qanday nomlanadi?
+      ====
+      #App Store
+      ====
+      Play Market
+      ====
+      Github
+      ====
+      Android Market
+      
+      
+      +++++
+      
+      
+      Quyidagilardan GUI elementlarini belgilang?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      Button, CheckBox
+      ====
+      Image, RadioButton
+      ====
+      Text, Slider
+      
+      
+      +++++
+      
+      
+      SDK Manager bu …
+      ====
+      #SDK versiyalarini boshqarish utilitasi 
+      ====
+      Virtual qurilmalarni boshqarish utilitasi
+      ====
+      Kodni tahlil qilish
+      ====
+      Loyiha modullarini boshqarish utilitas
+      
+      
+      +++++
+      
+      
+      Satrli o‘zgaruvchilar qaysi tipda e’lon qilinadi?
+      ====
+      #string
+      ====
+      bool
+      ====
+      int
+      ====
+      float
+      
+      
+      +++++
+      
+      
+      Android Studioda kompilyatsiya qilinib, ishlayotgan dasturga kiritilgan o‘zgarishlarni tezkor qo‘llash imkonini beruvchi komanda qaysi?
+      ====
+      #Hot reload
+      ====
+      Run
+      ====
+      Close
+      ====
+      Create
+      
+      
+      +++++
+      
+      
+      Quyidagi muharrirlardan qaysi birida Android platformasi uchun dastur yozish mumkin?
+      ====
+      #Barcha javoblar to‘g‘ri 
+      ====
+      Intellij Idea
+      ====
+      VS Code
+      ====
+      Android Studio
+      
+      
+      +++++
+      
+      
+      Android mobil qurilmalari uchun Googlening ilovalar do‘koni qanday nomlanadi?
+      ====
+      #Play Market 
+      ====
+      Amazon
+      ====
+      Github
+      ====
+      App Store
+      
+      
+      +++++
+      
+      
+      CheckBox nima?
+      ====
+      #bu maxsus turdagi button va ikkita holatda bo‘lishi mumkin: tekshirilgan yoki belgilanmagan.
+      ====
+      tugmachaga o‘xshash vidjet bo‘lib, unda rasm tugma sifatida ishlatilishi mumkin
+      ====
+      tekshirilgan / tekshirilmagan ko‘rsatkich turi
+      ====
+      tugmachadir va bu tugma bosilganda ma'lum bir operatsiya amalga oshiriladi.
+      
+      
+      +++++
+      
+      
+      "Ochiq telefon" linyasi qachon tuzilgan?
+      ====
+      #2007 yil
+      ====
+      2005 yil
+      ====
+      2006 yil
+      ====
+      2008 yil
+      
+      
+      +++++
+      
+      
+      RadioGroup qaysi tugmani o‘z ichiga oladi?
+      ====
+      #RadioButton
+      ====
+      Kommutator
+      ====
+      ToogleButton
+      ====
+      CheckBox
+      
+      
+      +++++
+      
+      
+      Android Studioda qaysi tillarda dastur yozish mumkin?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      Java
+      ====
+      Dart
+      ====
+      Kotlin
+      
+      
+      +++++
+      
+      
+      Android Studioda muharrir uchun mavzu (rang sxemalari) ni sozlash ketma-ketligi qanday?
+      ====
+      #File » Settings » Editor » Color Scheme
+      ====
+      File » Settings » Editor » Font » Size
+      ====
+      File » Settings » Editor » Font » Line spacing
+      ====
+      File » New » Import Project
+      
+      
+      +++++
+      
+      
+      Android-ning muhim xususiyatlari qanday?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ==== 
+      Har kim Android platformasini sozlashi mumkin
+      ====
+      Ochiq manba
+      ====
+      Xabar xizmatlari (SMS va MMS), veb-brauzer, ma'lumotlarni saqlash (SQLite), ulanish (GSM, CDMA, Moviy tish, Wi-Fi va boshqalar), Multimedia va boshqalar.
+      
+      
+      +++++
+      
+      
+      … tugma hisoblanib, uni bosish orqali muayyan amalni bajarishga dasturlash mumkin.
+      ====
+      #Button
+      ====
+      Radio
+      ====
+      CheckBox
+      ====
+      Text
+      
+      
+      +++++
+      
+      
+      Matematik amallarni o‘z ichiga olgan kutubxona qanday nomlanadi?
+      ====
+      #Math
+      ==== 
+      Material
+      ====
+      Cupertino
+      ====
+      Main
+      
+      
+      +++++
+      
+      
+      Android Studioda sozlamalarga kirish ketma-ketligi qanday?
+      ====
+      #File » Settings
+      ==== 
+      File » Open
+      ====
+      File » New » New Project
+      ====
+      File » New » Import Project
+      
+      
+      +++++
+      
+      
+      Toast sinfining maqsadi nima?
+      ====
+      #Ma'lum vaqtdan keyin xabarnomani ko‘rsatish uchun foydalaniladi.
+      ====
+      menyu yaratish sifatida ishlatiladi
+      ====
+      Xabarni saqlash uchun
+      ====
+      Ma'lumotlar saralash uchun ishlatiladi
+      
+      
+      +++++
+      
+      
+      Fon rangi qaysi atribut orqali o‘rnatiladi?
+      ====
+      #android:background="#E3254B"
+      ====
+      android:textcolor="#DC2020"
+      ====
+      android:Color="# B15355"
+      ====
+      android:id="#FF88FF"
+      
+      
+      +++++
+      
+      
+      Android Virtual Device (AVD) ishga tushirish tartibini tanlang?
+      ====
+      #AVD-ni ikki marta bosiladi yoki Start bosiladi; Ishlayotgan emulyatorni to‘xtatish uchun o‘ng tugma bosiladi va Stop yoki Menu » Stop ketma ketligi 
+      ====
+      SDK menejeri ochiladi. Emulyator ishlayotgan biz Android Studio loyihasini ishga tushirish va ishlatish qurilmasi sifatida emulyatorni tanlash
+      ====
+      APK faylini emulyatorga o‘rnatish uchun olib, keyin ishga tushirish mumkin.
+      ====
+      Menyuni tanlanadi, Ma'lumotlarni o‘chirishga o‘tiladi va tugmani bosiladi.
+      
+      
+      +++++
+      
+      
+      Android Studioda kod muharriridagi shriftni o‘zgartirish ketma-ketligi qanday?
+      ====
+      #File » Settings » Editor » Font » Size
+      ==== 
+      File » Settings
+      ====
+      File » Editor
+      ====
+      File » New » Import Project
+      
+      
+      +++++
+      
+      
+      …- bu komponentalarni bitta qatorga (gorizontal) yoki ustun (vertikal)ga joylashtirish uchun ishlatiladi.
+      ====
+      #LinearLayout
+      ====
+      FrameLayout
+      ====
+      AbsoluteLayout
+      ====
+      TableLayout
+      
+      
+      
+      +++++
+      
+      
+      … - komponentalarning jadval asosida joylashuvidir.
+      ====
+      #TableLayout
+      ====
+      LinearLayout
+      ====
+      FrameLayout
+      ====
+      AbsoluteLayout
+      
+      
+      +++++
+      
+      
+      Android Studioda mantiqiy ma’lumotlar qaysi tip orqali e’lon qilinadi?
+      ====
+      #Boolean
+      ====
+      int (integer)
+      ====
+      float(double)
+      ====
+      string
+      
+      
+      +++++
+      
+      
+      Android Studioda yangi plagin o‘rnatish ketma-ketligi qanday?
+      ====
+      #File » Settings »Plugins » Search & Install
+      ====
+      File » Open
+      ====
+      File » New » New Project
+      ====
+      File » Close
+      
+      
+      +++++
+      
+      
+      … - komponentalarning jadval asosida joylashuvidir.
+      ====
+      #TableLayout
+      ====
+      LinearLayout
+      ====
+      FrameLayout
+      ====
+      AbsoluteLayout
+      
+      
+      +++++
+      
+      
+      Android Studioda CheckBox tugmasini aktiv holati to‘g‘ri keltirilgan qatorni belgilang?
+      ====
+      #android:checked="true"
+      ====
+      android: text="CheckBox"
+      ====
+      android:textAlignment="center"
+      ====
+      android:checked="false"
+      
+      
+      +++++
+      
+      
+      Komponentaning ichki yuqori chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
+      ====
+      #paddingTop
+      ====
+      paddingBottom
+      ====
+      paddingRight
+      ====
+      paddingLeft
+      
+      
+      +++++
+      
+      
+      Android Studioda yaratilgan ilovalni .apk formatga o‘tkazish ketma-ketligi qanday?
+      ====
+      #Build » Build bundle » Build APK 
+      ====
+      File » Open » Build APK
+      ====
+      Build » New » Build APK
+      ====
+      Build »  Import Project
+      
+      
+      +++++
+      
+      
+      Android Studioda yangi loyiha yaratish ketma-ketligi to‘g‘ri keltirilgan javobni belgilang
+      ====
+      #File » New » New Project
+      ====
+      File » Open
+      ====
+      File » Open recent » Project_name
+      ====
+      File » New » Import Project
+      
+      
+      +++++
+      
+      
+      MainActivity.java faylidagi "button" ga murojaat qilish uchun activity_main.xml dagi tugma uchun qanday funktsiya yozilgan?
+      ====
+      #android: id = "@ + id / button"
+      ====
+      android: layout_width = "wrap_content"
+      ====
+      android: layout_below = "@ + id / editText"
+      ====
+      android: text = "Tugma"
+      
+      
+      +++++
+      
+      
+      Matn qalinligini sozlash uchun qaysi atributga qiymat beriladi?
+      ====
+      #android:textStyle
+      ====
+      android: text
+      ====
+      android: textcolor
+      ====
+      android: id
+      
+      
+      +++++
+      
+      
+      Android Studioda boshqa dasturlash muharriri (IntellijIdea, VSCode, …) da yaratilgan loyihani import qilish ketma-ketligi to‘g‘ri keltirilgan javobni belgilang
+      ====
+      #File » New » Import Project
+      ==== 
+      File » Open
+      ====
+      File » New » New Project
+      ====
+      File » Open recent » Project_name
+      
+      
+      +++++
+      
+      
+      Matnni o‘rtaga tekislash uchun textAlign atributiga qanday qiymat beriladi?
+      ====
+      #center
+      ====
+      left
+      ====
+      right
+      ====
+      bottom
+      
+      
+      +++++
+      
+      
+      MainActivity.java faylidagi "TextView" ga matn kiritish uchun activity_main.xml dagi tugma uchun qanday funktsiya yozilgan?
+      ====
+      #android: text = "Salom"
+      ====
+      android: layout_width = "wrap_content"
+      ====
+      android: layout_below = "@ + id / TextView "
+      ====
+      android: id = "@ + id /Salom "
+      
+      
+      +++++
+      
+      
+      CheckBox sinfining asosiy usullari qanday?
+      ====
+      #public boolean isChecked (), public void setChecked (boolean status)
+      ====
+      public string getText (), public void toString ()
+      ====
+      public void makeText (), public void getApplicationContext ()
+      ====
+      public void getBoxId (), public void show ()
+      
+      
+      +++++
+      
+      
+      Android Studioda Button tugmasi bosilganda Buttonni ishga tushuvchi buyruq to‘g‘ri keltirilgan qatorni toping?
+      ====
+      #android:onClick
+      ====
+      android: text
+      ====
+      android:textStyle
+      ====
+      android: textcolor
+      
+      
+      +++++
+      
+      
+      …-dastur birinchi marta ishga tushganda activity ni  chaqiradi.
+      ====
+      #onCreate()
+      ====
+      onStart()
+      ====
+      onResume()
+      ====
+      onPause()
+      
+      
+      +++++
+      
+      
+      Android Studioda komponentaning ichki o‘ng chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
+      ====
+      #android:paddingRight
+      ==== 
+      android:paddingBottom
+      ====
+      android:paddingLeft
+      ====
+      android:paddingTop
+      
+      
+      +++++
+      
+      
+      Android Studio da asosan java kodlari bilan ishlovchi fayli qaysi qatorda keltirilgan?
+      ====
+      #MainActivity.java
+      ==== 
+      Strings.java
+      ====
+      AndroidButton.xml
+      ====
+      AndroidManifest.xml
+      
+      
+      +++++
+      
+      
+      Button tugmasini ekranning chap qismidan joylashtirish uchun qaysi atributdan foydalaniladi?
+      ====
+      #android:layout_ alignLeft
+      ==== 
+      android:layout_centerHorizontal
+      ====
+      android:onClick
+      ====
+      android:layout_ alignTop
+      
+      
+      +++++
+      
+      
+      Android Studio dasturida matnga link orqali rang berish uchun qaysi atributdan foydalaniladi?
+      ====
+      #android:textColorLink
+      ====
+      android:textColor
+      ====
+      android:layoutLink
+      ====
+      android:text
+      
+      
+      +++++
+      
+      
+      Android Studio dasturida asosan ranglari bilan ishlovchi .xml fayli qaysi?
+      ====
+      #colors.xml
+      ==== 
+      strings.xml
+      ====
+      button.xml
+      ====
+      manifest.xml
+      
+      
+      +++++
+      
+      
+      LinearLayout ning qaysi atributi orqali komponentalarni bitta qatorga (gorizontal) yoki ustun (vertikal)ga joylashtirish mumkin?
+      ====
+      #android:orientation
+      ====
+      android:layout_width
+      ====
+      android:layout_height
+      ====
+      android:layout_alignParentTop
+      ====
+      
+      
+      +++++
+      
+      
+      …- activity to‘xtatilgan vaqtda chaqiriladi.
+      ====
+      #onRestart()
+      ====
+      onStart()
+      ====
+      onCreate()
+      ====
+      onPause()
+      
+      
+      +++++
+      
+      
+      …- activity foydalanuvchi tomonidan ishlatilayotganda chaqiriladi.
+      ====
+      #onResume()
+      ====
+      onStop()
+      ====
+      onDestroy()
+      ====
+      onRestart()
+      
+      
+      +++++
+      
+      
+      Android ilovasida testlarni yaratish uchun qanday paket ishlatiladi?
+      ====
+      #test 
+      ====
+      matn
+      ====
+      vidjet
+      ====
+      ilova
+      
+      
+      +++++
+      
+      
+      …- activity to‘xtatilgan vaqtda chaqiriladi.
+      ====
+      #onDestroy()
+      ====
+      onPause()
+      ====
+      onRestart()
+      ====
+      onStop()
+      
+      
+      +++++
+      
+      
+      
+      
+      Mobil ilovalar dizaynini ishlab chiqishda quyidagi grafik muharrirlarning qaysi biridan ko‘proq foydalaniladi?
+      ====
+      #Figma
+      ====
+      Adobe Photoshop
+      ====
+      Corel Draw
+      ====
+      Paint
+      
+      
+      
+      +++++
+      
+      
+      
+      Grafik interfeys bu
+      ====
+      #Foydalanuvchining grafik interfeysi
+      ====
+      Operatsion tizim. Qurilmadagi eng muhim dastur
+      ====
+      Ichki rivojlanish muhiti
+      ====
+      Android dastur kodi fayli to‘plangan
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Kivy freymvorki qaysi dasturlash tiliga tegishli?
+      ====
+      #Python
+      ====
+      PHP
+      ====
+      Ruby
+      ====
+      Pascal
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Boshqa klassdan voris olish uchun (Dart, Java) qaysi kalitso‘z ishlatiladi?
+      ====
+      #extends
+      ====
+      runApp
+      ====
+      main
+      ====
+      return
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Galereya ko‘rinishi nima?
+      ====
+      #Ekranda rasmlarni (rasmlarni) navbati bilan ko‘rsatish uchun foydalaniladi
+      ====
+      tarkibiy qismlarni bir-biriga ulash uchun ishlatiladi
+      ====
+      bu dasturning qo‘shimcha xususiyatlarini ochib beradigan menyu
+      ====
+      Joriy faoliyatda operatsiyalarni bajarish uchun zarur bo‘lgan buyruqlarni tushuntiradi
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Android operatsion tizimi qaysi IT gigant tomonidan qo‘llab-quvvatlab kelinadi?
+      ====
+      #Google
+      ====
+      Facebook
+      ====
+      Microsoft
+      ====
+      Apple
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Genymotion, BlueStacks qanday vazifani bajaruvchi dasturlar?
+      ====
+      #emulyator
+      ====
+      kompilyator
+      ====
+      kod muharriri
+      ====
+      grafik muharrir
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      SQLite qanday dastur hisoblanadi?
+      ====
+      #Ma’lumotlar bazasini boshqarish tizimi
+      ====
+      Freymvork
+      ====
+      Grafik muharrir
+      ====
+      Emulyator
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Mobil operatsion tizimlar deganda nimani tushunasiz?
+      ====
+      #bu mobil qurilmalarni boshqarish uchun mo‘ljallangan tizimlar (smartfonlar, planshetlar, PDA va boshqa mobil qurilmalar)
+      ====
+      bu mobil qurilmalar uchun mo‘ljallangan turli xil ilovalar va xizmatlarni o‘z ichiga olgan onlayn xizmatlar
+      ====
+      u Android tizimining yadrosi bo‘lib, 115 ta moduldan iborat
+      ====
+      ilovalarni boshqarish uchun zarur bo‘lgan kutubxonalar to‘plami
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Android Studioda yozilgan kodni natijasi (build) ni qanday ko‘rish mumkin?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      AVD manager orqali o‘rnatilgan virtual qurilmada
+      ====
+      Emulyator dasturlarida
+      ====
+      USB bilan telefonda
+      
+      
+      
+      
+      +++++
+      
+      
+      Android Studioda sozlamalarga tezkor kirish uchun qaysi tugmachalar birgalikda bosiladi?
+      ====
+      #Ctrl + Alt + S
+      ====
+      Ctrl + Alt + Del
+      ====
+      Alt + F4
+      ====
+      Ctrl + F1
+      
+      
+      +++++
+      
+      
+      
+      iOS uchun yozilgan kodni qanday qurilmada build qilish mumkin?
+      ====
+      #Faqatgina MacOS o‘rnatilgan qurilmada
+      ====
+      Istalgan Linux o‘rnatilgan kompyuterda
+      ====
+      Windows 10 o‘rnatilgan kompyuterda
+      ====
+      Istalgan OT o‘rnatilgan qurilmada
+      
+      
+      
+      +++++
+      
+      
+      
+      Kodning dasturchi uchun tushunarli holatda, probel va tabulyatsiya belgilari bilan yozilgan holati qanday nomlanadi?
+      ====
+      #Human readable
+      ====
+      Minified
+      ====
+      Yuqoridagilarni har ikkisi
+      ====
+      Kod bunday holatda yozilmaydi
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda kodni “Human readable” ko‘rinishga o‘tkazish uchun qaysi klavishlar birgalikda bosiladi?
+      ====
+      #Ctrl + Alt + L
+      ====
+      Ctrl + Shift + O
+      ====
+      Ctrl + Alt + N
+      ====
+      Ctrl + Shift + N
+      
+      
+      
+      +++++
+      
+      
+      
+      Quyidagilardan qaysi dasturlash tilida mobil dasturlash uchun freymvork mavjud emas?
+      ====
+      #PHP
+      ====
+      Python
+      ====
+      Dart
+      ====
+      Javascript
+      
+      
+      
+      +++++
+      
+      
+      
+      Qaysi mobil operatsion tizimda ishlaydigan qurilmalar eng ko‘p tarqalgan?
+      ====
+      #Android
+      ====
+      iOS
+      ====
+      WebOS
+      ====
+      BlackBerry OS
+      
+      
+      
+      +++++
+      
+      
+      
+      Android operatsion tizimining keng tarqalishining asosiy sababini belgilang?
+      ====
+      #Open source va tekin tarqatilishi
+      ====
+      Havfsizligi eng kuchliligi
+      ====
+      Kodning open source ligi
+      ====
+      Foydalanish tekinligi
+      
+      
+      +++++
+      
+      
+      
+      Android haqida to‘g‘ri ta’rif berilgan qatorni belgilang?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      Linux asosida yaratilgan
+      ====
+      Open source
+      ====
+      Foydalanish tekin
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda Flutter bilan ishlaganda Dart dasturlash tiliga doir maxsus sozlamalar qaysi katalogda saqlanadi?
+      ====
+      #.dart
+      ====
+      android 
+      ====
+      ios
+      ====
+      lib
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda qilinayotgan mobil ilova loyihasida Git sozlamalari qaysi faylda saqlanadi?
+      ====
+      #.gitignore
+      ====
+      .packages
+      ====
+      .metadata
+      ====
+      android
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda Flutter freymvorkida qilinayotgan mobil ilova loyihasida .metada faylida qanday ma’lumotlar saqlanadi?
+      ====
+      #Flutter yangilanishiga oid metama’lumotlar
+      ====
+      iOS ga oid kodlar
+      ====
+      Android maxsus (native) kodlari
+      ====
+      Kutubxona sozlamalari
+      
+      
+      
+      +++++
+      
+      
+      
+      Dastlab Andriod OT versiyalari qanday nomlangan?
+      ====
+      #Shirinliklar nomlari bilan
+      ====
+      Sayyoralar nomlari bilan
+      ====
+      Qizlar ismlari bilan
+      ====
+      Rok yulduzlari nomlari bilan
+      
+      
+      
+      +++++
+      
+      
+      Android Studioda dastur kodini kompilyatsiya qilib, to‘g‘ridan to‘g‘ri telefonga o‘rnatish mumkinmi?
+      ====
+      #Mumkin, USB interfeys va ba’zi sozlamalar bilan
+      ====
+      Mumkin emas
+      ====
+      Mumkin, WiFi yoki Bluetooth orqali
+      ====
+      To‘g‘ri javob yo‘q
+      
+      
+      +++++
+      
+      
+      Android Studioda qilinayotgan mobil ilova loyihasida .idea katalogida qanday ma’lumotlar saqlanadi?
+      ====
+      #Muharrir dasturi (editor) sozlamalari
+      ====
+      iOS ga oid kodlar
+      ====
+      Flutter yangilanishiga oid metama’lumotlar
+      ====
+      Android maxsus (native) kodlari
+      
+      
+      +++++
+      
+      
+      Mobil ilova yaratishda konsepsiyani ishlab chiqish qaysi jarayonlarni o‘z ichiga oladi?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      Potensial mijozlarning ehtiyojlarini tahlil qilish
+      ====
+      Interfeysning interaktiv prototiplarini ishlab chiqish
+      ====
+      Texnik topshiriqni ishlab chiqish
+      
+      
+      +++++
+      
+      
+      Javascript dasturlash tilining mobil dasturlashga mo‘ljallangan freymvorkini belgilang?
+      ====
+      #React Native
+      ====
+      React JS
+      ====
+      Node JS
+      ====
+      Angular JS
+      
+      
+      +++++
+      
+      
+      Bir nechta platformalar uchun birdaniga dastur yozish imkoniga ega dasturlash tillari … dasturlash tillari deyiladi.
+      ====
+      #Krossplatformali
+      ====
+      obyektga yo‘naltirilgan
+      ====
+      interpretatsiya qilinadigan
+      ====
+      Protsedurali
+      
+      
+      +++++
+      
+      
+      Faqat emulyator dasturlar berilgan qatorni toping?
+      ====
+      #BlueStacks, Genymotion
+      ====
+      Genymotion, Adobe Photoshop
+      ====
+      Android Studio, Figma
+      ====
+      Visual Studio, Arduino
+      
+      
+      +++++
+      
+      
+      Mobil dasturlashda faqatgina matn ko‘rinishidagi ma'lumotlarni ko‘rsatish uchun ishlatiladi va  elementi yordamida yaratiladi
+      ====
+      #TextView
+      ====
+      ListView
+      ====
+      GridView
+      ====
+      DataTable
+      
+      
+      +++++
+      
+      
+      CheckBox komponentasiga to‘g‘ri ta’rif berilgan qatorni belgilang
+      ====
+      #bu maxsus turdagi tugma va ikkita holatda bo‘lishi mumkin: checked yoki unchecked.
+      ====
+      tugmachaga o‘xshash vidjet bo‘lib, unda rasm tugma sifatida ishlatilishi
+      ====
+      Sahifaga rasm qo‘yish uchun ishlatiladi
+      ====
+      tugmachadir va bu tugma bosilganda ma'lum bir operatsiya amalga oshiriladi.
+      
+      
+      +++++
+      
+      
+      Android Studioda virtual qurilmalar (telefon, planshet, …) ni yaratish, boshqarish imkonini beruvchi utilita qaysi?
+      ====
+      #AVD manager
+      ====
+      SDK manager
+      ====
+      Resource manager
+      ====
+      Project manager
+      
+      
+      +++++
+      
+      
+      “Hot reload” funksiyasi qanday vazifani bajaradi?
+      ====
+      #Ishlab turgan dasturga o‘zgarishlarni tezkor qo‘shish
+      ====
+      Dasturni xatoliklarga tekshirish
+      ====
+      Yangi class yaratish
+      ====
+      Android Studio dasturini yopish
+      
+      
+      +++++
+      
+      
+      SQLite haqida quyidagilardan qaysi biri to‘g‘ri?
+      ====
+      #Ma’lumotlar bazasini boshqarish tizimi
+      ====
+      Virtual server
+      ====
+      Android Studioning maxsus kutubxonasi
+      ====
+      Freymvork
+      
+      
+      +++++
+      
+      
+      Android Studioda muharrir (editor) maxsus sozlamalari qaysi katalogda saqlanadi?
+      ====
+      #.idea
+      ====
+      Ios 
+      ====
+      Android 
+      ====
+      test
+      
+      
+      +++++
+      
+      
+      Quyidagilardan qaysi biri Android platformasi uchun dastur yozish imkoni mavjud emas?
+      ====
+      #Sublime Text 3
+      ====
+      Android Studio
+      ====
+      VSCode
+      ====
+      Intellij Idea
+      
+      
+      +++++
+      
+      
+      Vaqt bilan ishlash uchun Android Studioda qaysi komonenta ishlatiladi?
+      ====
+      #TimePicker
+      ====
+      RadioButton
+      ====
+      TextView
+      ====
+      CheckBox
+      
+      
+      +++++
+      
+      
+      Asosan tugmachali telefonlarda ishlatilgan mobil OT ni belgilang?
+      ====
+      #Symbian 
+      ====
+      Raspbian
+      ====
+      Debian
+      ====
+      XP
+      
+      
+      +++++
+      
+      
+      Windows OT ga quyidagi dasturlardan qaysi birini o‘rnatib, .apk kengaytmali dasturni ishlatish mumkin?
+      ====
+      #Genymotion 
+      ====
+      Total Commander
+      ====
+      Github Desktop
+      ====
+      Istalgan brauzer
+      
+      
+      +++++
+      
+      
+      Android Studioda kerakli kutubxona va modullar qaysi komanda bilan chaqiriladi?
+      ====
+      #import
+      ====
+      extends
+      ====
+      run
+      ====
+      class
+      
+      
+      +++++
+      
+      
+      Butun sonli ma’lumotlar qaysi tipda e’lon qilinadi?
+      ====
+      #int (integer)
+      ====
+      char
+      ====
+      float(double)
+      ====
+      string
+      
+      
+      +++++
+      
+      
+      Joriy elementga murojaat qilish uchun qaysi kalit so‘z ishlatiladi?
+      ====
+      #this 
+      ====
+      return
+      ====
+      void
+      ====
+      private
+      
+      
+      +++++
+      
+      
+      GUI nima?
+      ====
+      #Foydalanuvchi grafik interfeysi
+      ====
+      Dasturlash uchun kerakli modullar
+      ====
+      Freymvork 
+      ====
+      Yuqoridagilardan hech qaysi biri
+      
+      
+      +++++
+      
+      
+      Haqiqiy sonlar qaysi kalit so‘z bilan e’lon qilinadi?
+      ====
+      #float
+      ====
+      int
+      ====
+      char
+      ====
+      string
+      
+      
+      +++++
+      
+      
+      Funksiyadagi return buyrug‘i qanday vazifani bajaradi?
+      ====
+      #o‘zidan keyin keluvchi ma’lumot (son, satr, …) ni funksiya chaqirilgan joyga qaytaradi (uzatadi)
+      ====
+      Boshqa sinfdan voris oladi
+      ====
+      Kerakli modullarni ulaydi
+      ====
+      To‘g‘ri javob berilmagan
+      
+      
+      +++++
+      
+      
+      Zamonaviy smartfonlar quyidagi qaysi funksiyalarga ega?
+      ====
+      #Barcha javoblar to‘g‘ri 
+      ====
+      Wi-Fi, Bluetooth
+      ====
+      GPS, Voice Call
+      ====
+      Touch Screen, Media Player
+      
+      
+      +++++
+      
+      
+      
+      
+      Android telefonlarga Play Market ilovalar magazinidan boshqa joydan ham dastur o‘rnatsa bo‘ladimi?
+      ====
+      #Ha, shunga ruxsat beruvchi sozlamani yoqish kerak
+      ====
+      Buning imkon yo‘q
+      ====
+      Ha, faqat oldindan Google Service ni ogohlantirish kerak
+      ====
+      To‘g‘ri javob yo‘q
+      
+      
+      +++++
+      
+      
+      Android Studioda kodlarimiz qatorlari orasidagi masofani sozlash ketma-ketligi qanday?
+      ====
+      #File » Settings » Editor » Font » Size 
+      ====
+      File » Settings
+      ====
+      File » Settings » Editor » Font » Line spacing
+      ====
+      File » New » Import Project
+      
+      
+      +++++
+      
+      
+      Android Studioda yaratilgan loyihani yana qaysi muharrirlarda o‘zgartirish va ishlatish mumkin?
+      ====
+      #Android Studio, IntelliJ IDEA, Eclipse 
+      ====
+      Android Studio, Sublime
+      ====
+      Android Studio, VSCode
+      ====
+      Android Studio, Sublime, Notepad
+      
+      
+      +++++
+      
+      
+      Android Studio-da ishlatiladigan asosiy o‘lchov birligi nima?
+      ====
+      #dp 
+      ====
+      sm
+      ====
+      mm
+      ====
+      km
+      
+      
+      +++++
+      
+      
+      BlueStacks dasturidan qay maqsadda foydalanamiz?
+      ====
+      #Emulyator 
+      ====
+      Grafik muharrir
+      ====
+      Media Player
+      ====
+      Brauzer
+      
+      
+      +++++
+      
+      
+      Katta kichik harflarga sezuvchanlik hususiyati qanday nomlanadi?
+      ====
+      #Case sensitive
+      ====
+      Page case
+      ====
+      Code folding
+      ====
+      Crossplatform
+      
+      
+      +++++
+      
+      
+      Android Studioda fayl ichidan qidiruvni amalga oshirish uchun qaysi klavishlar ketma-ketligi bosiladi?
+      ====
+      #Ctrl + F
+      ====
+      Ctrl + S
+      ====
+      Ctrl + O
+      ====
+      Ctrl + R
+      
+      
+      +++++
+      
+      
+      ToggleButton sinfining eng ko‘p ishlatiladigan usullari qanday?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      bekor setChecked (mantiqiy tekshirilgan)
+      ====
+      CharSequence getTextOff ()
+      ====
+      CharSequence getTextOn (),
+      
+      
+      +++++
+      
+      
+      Android CheckBox klassi qaysi sinfning subclassi?
+      ====
+      #CompoundButton 
+      ====
+      Beam
+      ====
+      AppCompatActivity
+      ====
+      RadioGroup
+      
+      
+      +++++
+      
+      
+      Android Studioda qanday maxsulotlar yaratish mumkin?
+      ====
+      #Barcha javoblar to‘g‘ri 
+      ====
+      Mobil telefonlar uchun dasturlar
+      ====
+      Planshetlar uchun dasturlar
+      ====
+      Android televizorlar uchun dasturlar
+      
+      
+      +++++
+      
+      
+      … buttonning maxsus turi hisoblanib, ikki hil holatda bo‘lishi mumkin: checked yoki unchecked.
+      ====
+      #CheckBox 
+      ====
+      Image
+      ====
+      Radio
+      ====
+      Text
+      
+      
+      +++++
+      
+      
+      Quyidagi dialog oynalaridan qaysi biri Android tomonidan qo‘llab-quvvatlanadi?
+      ====
+      #AlertDialog
+      ====
+      ProgressDialog
+      ====
+      DatePickerDialog
+      ====
+      TimePickerDialog
+      
+      
+      +++++
+      
+      
+      Qaysi MBBT avtomatik ravishda Android tomonidan taqdim etiladi?
+      ====
+      #SQLite 
+      ====
+      Apache
+      ====
+      Oracle
+      ====
+      MySQL
+      
+      
+      +++++
+      
+      
+      TableLayout  - oynasi jadval qatorini hosil qilish uchun qaysi  elementdan foydalaniladi?
+      ====
+      #TableRow
+      ====
+      Image
+      ====
+      Radio
+      ====
+      Text
+      
+      
+      +++++
+      
+      
+      Android Studioda kiritilgan matnni kursiv ko‘rinishiga o‘tkazish qaysi buyrug‘i to‘g‘ri kiritilgan qatorni belgilang?
+      ====
+      #android:textStyle="italic "
+      ====
+      android:textColor="#ffff"
+      ====
+      android:text="black"
+      ====
+      android:textStyle="bold "
+      
+      
+      +++++
+      
+      
+      Obyekt gorizontal uzunligini (kengligini) sozlash uchun qaysi atributga murojaat qilinadi?
+      ====
+      #width
+      ====
+      height
+      ====
+      title
+      ====
+      caption
+      
+      
+      +++++
+      
+      
+      Komponentaning tashqi chegarasida bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
+      ====
+      #margin
+      ====
+      context
+      ====
+      background
+      ====
+      padding
+      
+      
+      +++++
+      
+      
+      Komponentaning ichki chegarasida bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
+      ====
+      #padding
+      ====
+      margin
+      ====
+      context
+      ====
+      background
+      
+      
+      +++++
+      
+      
+      Obyekt nom berish uchun qaysi atributga murojaat qilinadi?
+      ====
+      #text
+      ====
+      width
+      ====
+      height
+      ====
+      color
+      
+      
+      +++++
+      
+      
+      …– bu komponentalarni ma’lum o‘lchamlar va oraliqlar asosida joylashtirish imkoniyatini yaratadi.
+      ====
+      #AbsoluteLayout
+      ====
+      LinearLayout
+      ====
+      FrameLayout
+      ====
+      TableLayout
+      
+      
+      +++++
+      
+      
+      … buttonga o‘xshash vidjet bo‘lib, rasmni tugma sifatida ishlatish mumkin.
+      ====
+      #ImageButton
+      ==== 
+      EditText
+      ====
+      Radio
+      ====
+      Text
+      
+      
+      +++++
+      
+      
+      Android Studioda brauzerlarni integratsiya qilish ketma-ketligi qanday?
+      ====
+      #File » Settings » Tools » Web Browsers
+      ====
+      File » Settings » Editor » Font » Size
+      ====
+      File » Editor
+      ====
+      File » New » Import Project
+      
+      
+      +++++
+      
+      
+      Komponentaning tashqi chap chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
+      ====
+      #marginLeft 
+      ====
+      marginBottom
+      ====
+      marginRight
+      ====
+      marginTop
+      
+      
+      +++++
+      
+      
+      LinearLayout bu-…
+      ====
+      #komponentalarni bitta qatorga (gorizontal) yoki ustun (vertikal)ga joylashtirish uchun ishlatiladi.
+      ====
+      komponentalarning jadval asosida joylashtiradi.
+      ====
+      bu komponentalarni ma’lum o‘lchamlar va oraliqlar asosida joylashtirish imkoniyatini yaratadi.
+      ====
+      Menyuni tanlanadi, Ma'lumotlarni o‘chirishga o‘tiladi va tugmani bosiladi.
+      ====
+      
+      
+      +++++
+      
+      
+      …- activity foydalanuvchiga ko‘rinmay qolganida chaqiriladi
+      ====
+      #onStop()
+      ====
+      onDestroy()
+      ====
+      onRestart()
+      ====
+      onResume()
+      
+      
+      +++++
+      
+      
+      Komponentaning tashqi o‘ng chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
+      ====
+      #marginRight
+      ==== 
+      marginBottom
+      ====
+      marginLeft
+      ====
+      marginTop
+      
+      
+      +++++
+      
+      
+      Komponentaning ichki chap chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
+      ====
+      #paddingLeft
+      ==== 
+      paddingBottom
+      ====
+      paddingRight
+      ====
+      paddingTop
+      
+      
+      +++++
+      
+      
+      Android Studioda kiritilgan matn qalinligini sozlash to‘g‘ri kiritilgan qatorni belgilang?
+      ====
+      #android:textStyle="bold"
+      ====
+      android:textColor="#ffff"
+      ====
+      android:text="black"
+      ====
+      android:textStyle="italic"
+      
+      
+      +++++
+      
+      
+      DataPicker foydalanuvchiga quyidagilarni amalga oshirishga imkon beradi:
+      ====
+      #Sanani belgilash
+      ====
+      Vaqtni tanlash
+      ====
+      Rasm ochish
+      ====
+      Jadval yaratish
+      
+      
+      +++++
+      
+      
+      Android Studioda ochiq turgan loyihani yopish ketma-ketligi qanday?
+      ====
+      #File » Close
+      ==== 
+      File » Open
+      ====
+      File » New » New Project
+      ====
+      File » New » Import Project
+      
+      
+      +++++
+      
+      
+      …-TextView ning qo‘shimcha imkoniyatli turi hisoblanib, foydalanuvchi ushbu komponenta orqali ma’lumot kiritishi mumkin.
+      ====
+      #EditText
+      ====
+      Button
+      ====
+      Checkbox
+      ====
+      RadioButton
+      
+      
+      +++++
+      
+      
+      
+      TimePickerDialog foydalanuvchiga quyidagilarni amalga oshirishga imkon beradi:
+      ====
+      #Vaqtni tanlash
+      ====
+      Sanani belgilash
+      ====
+      Rasm ochish
+      ====
+      Jadval yaratish
+      
+      
+      +++++
+      
+      
+      Android Studioda mavjud loyihani ochish ketma-ketligi to‘g‘ri keltirilgan javobni belgilang?
+      ====
+      #File » Open
+      ====
+      File » New » New Project
+      ====
+      File » Open recent » Project_name
+      ====
+      File » New » Import Project
+      
+      
+      +++++
+      
+      
+      Obyekt vertikal uzunligini sozlash uchun qaysi atributga murojaat qilinadi?
+      ====
+      #height
+      ====
+      width
+      ====
+      title
+      ====
+      caption
+      
+      
+      +++++
+      
+      
+      Komponentaning tashqi yuqori chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
+      ====
+      #marginTop
+      ==== 
+      marginBottom
+      ====
+      marginRight
+      ====
+      marginLeft
+      
+      
+      +++++
+      
+      
+      …- activity natijasi foydalanuvchiga ko‘ringanda chaqiriladi.
+      ====
+      #onStart()
+      ====
+      onCreate()
+      ====
+      onResume()
+      ====
+      onPause()
+      
+      
+      +++++
+      
+      
+      Android Studioda oxirgi bir nechta loyihalarni ochish ketma-ketligi to‘g‘ri keltirilgan javobni belgilang?
+      ====
+      #File » Open recent
+      ==== 
+      File » Open
+      ====
+      File » New » New Project
+      ====
+      File » New » Import Project
+      
+      
+      +++++
+      
+      
+      …- joriy activity faoliyati vaqtinchalik to‘xtatilib boshqa activity faollashtirilganda chaqiriladi.
+      ====
+      #onPause()
+      ====
+      onStart()
+      ====
+      onResume()
+      ====
+      onCreate()
+      
+      
+      +++++
+      
+      
+      Android Studioda kiritilgan matnni o‘lchamini o‘gartirish uchun qaysi atributdan foydalaniladi?
+      ====
+      #android:textSize="25dp "
+      ====
+      android:textColor="#ffff"
+      ====
+      android:text="black"
+      ====
+      android:textStyle="bold "
+      
+      
+      +++++
+      
+      
+      Android Studioda ImageView komponentasiga rasm kiritish buyrug‘i to‘g‘ri kiritilgan qatorni belgilang?
+      ====
+      #android:src="@drawable/circle"
+      ====
+      android:id="@+id/imageView"
+      ====
+      android:layout_width="wrap_content"
+      ====
+      android:layout_height="wrap_content"
+      
+      
+      +++++
+      
+      
+      Androidda Google Maps ximatidan foydalanish uchun qaysi kutubxonadan foydalaniladi?
+      ====
+      #android.gms.maps.MapFragment
+      ====
+      gooogle.android.Fragment
+      ====
+      android.gms. AppFragment
+      ====
+      androidx.appcompat. AppCompatActivity
+      
+      
+      +++++
+      
+      
+      Android Studio dasturida asosan matnli ma’lumotlar bilan ishlovchi .xml fayli qaysi?
+      ====
+      #strings.xml
+      ====
+      colors.xml
+      ====
+      button.xml
+      ====
+      manifest.xml
+      
+      
+      +++++
+      
+      
+      android:layout_below="@+id/imageView"  ushbu buyruq qanday amalni bajaradi?
+      ====
+      #Kiritiladigan komponentalarni imageView komponentasidan keyin (pastki qismdan) joylashtiradi.
+      ====
+      Kiritiladigan komponentalarni imageView komponentasiga rasm ko‘rinishida joylashtiradi.
+      ====
+      imageView komponentasiga nom beradi.
+      ====
+      Kiritiladigan komponentani imageView komponentasiga almashtiradi.
+      
+      
+      +++++
+      
+      
+      Strings.xml fayliga ilova nomi to‘g‘ri kiritilgan qatorni toping?
+      ====
+      #Laboratoriya_Ishi_1
+      ====
+      Laboratoriya_Ishi_1 />
+      ====
+      
+      ====
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Ma'lumotlar manzili (path) nima uchun ishlatiladi?
+      ====
+      #Chaqirilgan resursning local/global adresini ko‘rsatish uchun
+      ====
+      Video formatini sozlash uchun
+      ====
+      Fayl toifasini haqida xabar berish uchun
+      ====
+      Ekran o‘lchamiga moslashish uchun
+      
+      
+      
+      
+      +++++
+      
+      
+      
+      
+      Bir nechta variantni birgalikda tanlash maqsadida ishlatiladigan komponenta qaysi?
+      ====
+      #Checkbox
+      ====
+      Button
+      ====
+      Text
+      ====
+      DatePicker
+      
+      
+      
+      +++++
+      
+      
+      
+      iOS platformasini qaysi kompaniya qo‘llab-quvvatlab, rivojlantirib boradi?
+      ====
+      #Apple
+      ====
+      Microsoft
+      ====
+      Facebook
+      ====
+      Tesla
+      
+      
+      
+      +++++
+      
+      
+      
+      Quyidagi tillardan qaysi birida mobil ilovalar ishlab chiqish imkoni mavjud emas?
+      ====
+      #PHP
+      ====
+      Java
+      ====
+      Javascript
+      ====
+      Python
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda tayyor bo‘lgan kodni biron qurilmada ishga tushirish (build) uchun qaysi buyruq bosiladi?
+      ====
+      #Run (Shift + F10)
+      ====
+      Open (Ctrl + O)
+      ====
+      Debug (Shift + F9)
+      ====
+      Save (Ctrl + S)
+      
+      
+      
+      +++++
+      
+      
+      
+      Microsoft kompaniyasining mobil qurilmalar uchun yaratgan mobil operatsion tizimi qaysi?
+      ====
+      #Windows Phone
+      ====
+      Windows 10
+      ====
+      Windows XP
+      ====
+      Windows Vista
+      
+      
+      
+      +++++
+      
+      
+      
+      Android Studioda yozilgan kodni qaysi brauzerlar orqali build qilib ko‘rish mumkin?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      Chrome, Opera
+      ====
+      Chrome, Mozilla Firefox
+      ====
+      Yandex Browser, Opera
+      
+      
+      
+      +++++
+      
+      
+      
+      Python dasturlash tilining Kivy freymvorkida qaysi qurilmalar uchun dastur yozish mumkin?
+      ====
+      #Barcha javoblar to‘g‘ri
+      ====
+      Kompyuterlar
+      ====
+      Mobil telefonlar
+      ====
+      Planshetlar
+      
+      
+      
+      +++++
+      
+      
+      
+      APK formati qanday turdagi fayllarni saqlaydi?
+      ====
+      #Android dasturning build qilingan holati
+      ====
+      Dart tilida yozilgan dastur kodi
+      ====
+      Java tilida yozilgan dastur kodi
+      ====
+      Android OS ning kutubxonasi
+      
+      
+      
+      +++++
+      
+      
+      
+      Mobil dasturlashda Android ilovalar uchun asosan qaysi dizayn kutubxonasi ishlatiladi?
+      ====
+      #Material
+      ====
+      Cupertino
+      ====
+      Arduino
+      ====
+      Bootstrap
+      
+      
+      
     </pre>
-</body>
+
+    <script>
+      const pre = document.getElementById("content");
+      const originalText = pre.innerHTML;
+
+      function searchText() {
+        const text = document.getElementById("searchInput").value.trim();
+        if (text === "") return;
+
+        const regex = new RegExp(text, "gi");
+        pre.innerHTML = originalText.replace(
+          regex,
+          (match) => `<mark>${match}</mark>`
+        );
+      }
+
+      function resetText() {
+        pre.innerHTML = originalText;
+        document.getElementById("searchInput").value = "";
+      }
+    </script>
+  </body>
 </html>
